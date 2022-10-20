@@ -1,0 +1,13 @@
+.weVoteFor {
+    .weVoteFor__heading {
+        font-size: 42px;
+        text-align: end;
+        margin-top: 34px;
+    }
+    .weVoteFor__items {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 43px;
+        margin-top: 32px;
+    }
+}

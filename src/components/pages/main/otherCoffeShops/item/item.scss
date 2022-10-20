@@ -1,0 +1,17 @@
+.other-coffe-shops .other-coffe-shops__item {
+    .other-coffe-shops__item-heading {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        .other-coffe-shops__item-name {
+            font-size: 35px;
+        }
+        .other-coffe-shops__item-address {
+
+        }
+    }
+    .other-coffe-shops__item-img {
+        margin-top: 10px;
+        width: 100%;
+    }
+}
