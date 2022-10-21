@@ -1,11 +1,10 @@
 import './vacancy.scss';
 import employeeImg from './../../../../assets/img/vacancy/vacancy.webp';
-import vectorImg from './../../../../assets/img/vacancy/vacancy_vector.webp';
 
 export const Vacancy: React.FC = () => {
-  return <div className='vacancy'>
+  return <section className='vacancy'>
     <div className='vacancy__vector-container'>
-      <img src={vectorImg} className='vacancy__vector' alt='vector' />
+      <div className='vacancy__vector'/>
     </div>
     <img src={employeeImg} className='vacancy__employee' alt='employee' />
     <div className='vacancy__content'>
@@ -16,5 +15,5 @@ export const Vacancy: React.FC = () => {
       </div>
       <button className='vacancy__button'>Заполнить анкету</button>
     </div>
-  </div>
+  </section>
 };

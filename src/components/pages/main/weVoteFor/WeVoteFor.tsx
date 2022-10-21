@@ -27,8 +27,8 @@ const cardsData = [
 export const WeVoteFor: React.FC = () => {
   const Cards = cardsData.map((c, index) => <ImgCard {...c} key={index} />)
 
-  return <div className='we-vote-for'>
+  return <section className='we-vote-for'>
     <h3 className='we-vote-for__heading'>Мы топим за..</h3>
     <div className='we-vote-for__items'>{Cards}</div>
-  </div>
+  </section>
 };

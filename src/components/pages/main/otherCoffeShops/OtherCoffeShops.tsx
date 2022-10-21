@@ -35,10 +35,10 @@ const shops = [
 export const OtherCoffeShops: React.FC = () => {
   const Shops = shops.map((s, index) => <Item {...s} key={index} />)
 
-  return <div className='other-coffe-shops'>
+  return <section className='other-coffe-shops'>
     <h1 className='other-coffe-shops__heading'>Наше небо всегда в пальмах! В каждом городе...</h1>
     <div className='other-coffe-shops__items'>
       {Shops}
     </div>
-  </div>
+  </section>
 };

@@ -7,7 +7,7 @@ import { Vacancy } from "./vacancy/Vacancy"
 import { WeVoteFor } from "./weVoteFor/WeVoteFor"
 
 export const Main: React.FC = () => {
-    return <section className="main-page">
+    return <main className="main-page">
         <Hero />
         <AboutUs />
         <WeVoteFor />
@@ -15,5 +15,5 @@ export const Main: React.FC = () => {
         <Menu />
         <RecordCard />
         <Vacancy />
-    </section>
+    </main>
 }

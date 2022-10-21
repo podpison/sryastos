@@ -7,14 +7,14 @@
     position: relative;
     .vacancy__vector-container {
         position: absolute;
-        left: -15%;
-        top: 0;
-        width: 100vw;
-        height: 80px;
+        top: -2px;
+        left: 50%;
+        height: 90px;
+        z-index: 1;
         .vacancy__vector {
-            @include v.fullBleed('./../../../../assets/img/card/card_vector.webp');
+            @include v.fullBleed('./../../../../assets/img/vacancy/vacancy_vector.webp');
+            z-index: 1;
             height: 100%;
-            width: 100%;
         }
     }
     .vacancy__employee {

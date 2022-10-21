@@ -1,7 +1,7 @@
 import './NotFound.scss';
 
 export const NotFound: React.FC = () => {
-    return <div>
+    return <main>
         NotFound idi naxyi
-    </div>
+    </main>
 };

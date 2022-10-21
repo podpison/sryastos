@@ -1,13 +1,37 @@
 @use './../../../../v';
 
+@mixin fairyLights {
+    position: absolute;
+    z-index: -1;
+}
+
 .about-us {
     display: flex;
     justify-content: space-between;
     margin-top: 70px;
-    .about-us__img1 {
-        width: 100%;
-        width: 594px;
-        height: 828px;
+    position: relative;
+    .about-us__img1-container {
+        position: relative;
+        .about-us__img1 {
+            width: 594px;
+            height: 828px;
+        }
+        .about-us__fairy-lights {
+            @include fairyLights;
+            top: 36%;
+            right: -70%;
+        }
+        .about-us__small-fairy-lights {
+            @include fairyLights;
+            top: 10%;
+            right: -43%;
+            transform: rotateZ(12deg);
+        }
+        .about-us__small-fairy-lights2 {
+            @include fairyLights;
+            top: 20%;
+            left: -13%;
+        }
     }
     .about-us__content {
         .about-us__img-cards {

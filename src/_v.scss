@@ -12,7 +12,9 @@ $maxWidth: 1500px;
     height: 100%;
     content: '';
     width: 100vw;
-    margin-left: calc(50% - 50vw);
+    max-width: $maxWidth;
+    margin-left: 50%;
+    transform: translateX(-50%);
     position: absolute;
     z-index: -1;
     @if ($backgroundColor) {
