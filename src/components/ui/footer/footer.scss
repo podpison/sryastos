@@ -1,0 +1,16 @@
+@use './../../../v';
+
+.footer {
+    @include v.fullBleed(null, v.$green);
+    display: grid;
+    align-items: center;
+    grid-template-columns: max-content 1fr;
+    padding: 20px 0;
+    & > p {
+        color: white;
+    }
+    .footer__trademark {
+        margin: 0 auto;
+        font-size: 25px;
+    }
+}

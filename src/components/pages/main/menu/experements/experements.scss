@@ -1,0 +1,14 @@
+.main-page__experements {
+    margin-top: 60px;
+    .main-page__experements-heading {
+        font-size: 25px;
+        text-align: center;
+    }
+    .main-page__experements-items {
+        margin-top: 75px;
+        display: grid;
+        gap: 25px;
+        grid-template-areas: 'a1 a2 a3' 'a4 a5 a5' 'a6 a6 a6';
+        grid-template-rows: 550px 400px 250px;
+    }
+}

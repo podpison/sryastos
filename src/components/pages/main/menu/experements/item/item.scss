@@ -1,0 +1,60 @@
+@keyframes showDescription_fadeIn {
+    0% {
+        max-height: 0;
+        opacity: 0;
+        visibility: hidden;
+    }
+    100% {
+        opacity: 1;
+        visibility: visible;
+        max-height: 1000px;
+    }
+}
+@keyframes showDescription_fadeOut {
+    0% {
+        max-height: 1000px;
+        opacity: 1;
+        visibility: visible;
+    }
+    100% {
+        max-height: 0;
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.main-page__experements-item {
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 25px;
+    justify-content: flex-end;
+    &:hover {
+        .main-page__experements-items-description {
+            opacity: 1;
+            visibility: visible;
+            transition-duration: 1s;
+            animation: showDescription_fadeIn 1s ease-out;
+            max-height: 1000px;
+        }
+    }
+
+    @for $i from 1 through 6 {
+        &:nth-child(#{$i}) {
+            grid-area: a#{$i};
+        }
+    }
+    .main-page__experements-items-heading {
+        color: white;
+        font-size: 50px;
+    }
+    .main-page__experements-items-description {
+        opacity: 0;
+        visibility: hidden;
+        color: white;
+        max-height: 0;
+        overflow: hidden;
+        animation: showDescription_fadeOut .3s ease-out;
+    }
+}

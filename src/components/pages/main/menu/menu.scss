@@ -1,0 +1,16 @@
+@use './../../../../v';
+
+.main-page__menu {
+    margin-top: 60px;
+    .main-page__menu-heading-container {
+        @include v.fullBleed('./../../../../assets/img/menu.webp');
+        height: 800px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .main-page__menu-heading {
+            color: white;
+            font-size: 90px;
+        }
+    }
+}

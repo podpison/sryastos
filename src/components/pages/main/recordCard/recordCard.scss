@@ -1,0 +1,24 @@
+@use './../../../../v';
+
+.main-page__record-card {
+    @include v.fullBleed('./../../../../assets/img/card/card_background.webp');
+    height: 1100px;
+    margin-top: 50px;
+    position: relative;
+    .main-page__record-card-card {
+        width: 100%;
+        height: 100%;
+        margin-top: 10px;
+    }
+    .main-page__record-card-vector-container {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        height: 90px;
+        z-index: 1;
+        .main-page__record-card-vector {
+            @include v.fullBleed('./../../../../assets/img/card/card_vector.webp');
+            height: 100%;
+        }
+    }
+}

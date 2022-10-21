@@ -1,0 +1,55 @@
+@use './../../../../v';
+
+.about-us {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+    .about-us__img1 {
+        width: 100%;
+        width: 594px;
+        height: 828px;
+    }
+    .about-us__content {
+        .about-us__img-cards {
+            display: flex;
+            justify-content: flex-end;
+            .about-us__img-card {
+                &:nth-child(1) {
+                    transform: rotate(-12.63deg);
+                    & > img {
+                        transform: rotate(12deg);
+                    }
+                }
+                &:nth-child(2) {
+                    transform: rotate(6.99deg);
+                    & > img {
+                        transform: rotate(353.5deg);
+                    }
+                }
+            }
+        }
+        .abous_us_info {
+            margin-top: 100px;
+            max-width: 450px;
+            .abous_us_info-heading {
+                font-size: 70px;
+                display: grid;
+                grid-template-columns: 1fr max-content;
+                gap: 40px;
+                align-items: center;
+                &::before {
+                    content: '';
+                    display: block;
+                    width: 100%;
+                    height: 2px;
+                    background-color: v.$green;
+                }
+            }
+            .abous_us_info-description {
+                margin-top: 60px;
+                font-size: 20px;
+                line-height: 120%;
+            }
+        }
+    }
+}

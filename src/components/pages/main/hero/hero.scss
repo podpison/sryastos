@@ -1,7 +1,7 @@
 @use './../../../../v';
 
 .main-page .main-page__hero {
-    @include v.fillBleed('./../../../../assets/img/hero.webp');
+    @include v.fullBleed('./../../../../assets/img/hero.webp');
     display: flex;
     flex-direction: column;
     justify-content: center;

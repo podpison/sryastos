@@ -1,0 +1,54 @@
+@use './../../../../v';
+
+.vacancy {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 120px;
+    position: relative;
+    .vacancy__vector-container {
+        position: absolute;
+        left: -15%;
+        top: 0;
+        width: 100vw;
+        height: 80px;
+        .vacancy__vector {
+            @include v.fullBleed('./../../../../assets/img/card/card_vector.webp');
+            height: 100%;
+            width: 100%;
+        }
+    }
+    .vacancy__employee {
+        width: 118%;
+        margin-left: -32%;
+    }
+    .vacancy__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .vacancy__sign1 {
+            font-size: 60px;
+        }
+        .vacancy__sings23 {
+            .vacancy__sign2 {
+                font-size: 50px;
+                margin-top: 120px;
+            }
+            .vacancy__sign3 {
+                font-size: 30px;
+                color: rgba(74, 73, 73, 0.47);
+                margin-top: 20px;
+            }
+        }
+        .vacancy__button {
+            color: white;
+            background-color: v.$green;
+            padding: 25px 60px;
+            border: none;
+            margin-top: 80px;
+            width: fit-content;
+            cursor: pointer;
+            font-family: v.$mainFont;
+            font-size: 20px;
+        }
+    }
+}

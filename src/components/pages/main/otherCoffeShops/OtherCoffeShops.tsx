@@ -10,25 +10,25 @@ const shops = [
     name: 'Балашиха',
     address: 'ул. Советская, влд. 4В',
     src: shop1Img,
-    to: '/balashikha'
+    to: 'balashikha'
   },
   {
     name: 'Ногинск',
     address: 'ул. 3-го интерниционала 67',
     src: shop2Img,
-    to: '/noginsk'
+    to: 'noginsk'
   },
   {
     name: 'Железнодорожный',
     address: 'ул. новая 16',
     src: shop3Img,
-    to: '/zheleznodorozhnyy'
+    to: 'zheleznodorozhnyy'
   },
   {
     name: 'Электросталь',
     address: 'ПР-т. ленина 45',
     src: shop4Img,
-    to: '/electrostal'
+    to: 'electrostal'
   },
 ]
 

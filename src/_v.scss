@@ -1,19 +1,26 @@
-$green: #003F42;
+$green: #008E8B;
 $background: #FFFAEF;
+
+$mainFont: bebasNeue;
 
 $maxWidth: 1500px;
 
-@mixin fillBleed($img) {
+@mixin fullBleed($img, $backgroundColor: null) {
   position: relative;
   &::before {
     inset: 0 auto auto 0;
     height: 100%;
-    background-image: url($img);
-    background-size: 100% 100%;
     content: '';
     width: 100vw;
     margin-left: calc(50% - 50vw);
     position: absolute;
     z-index: -1;
+    @if ($backgroundColor) {
+      background-color: $backgroundColor;
+    } @else {
+      background-image: url($img);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
   }
 }
