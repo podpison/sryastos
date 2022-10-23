@@ -2,7 +2,7 @@
 
 .vacancy {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: calc(v.$maxWidth/ 2) 1fr;
     gap: 120px;
     position: relative;
     .vacancy__vector-container {
@@ -18,8 +18,8 @@
         }
     }
     .vacancy__employee {
-        width: 118%;
-        margin-left: -32%;
+        width: 100%;
+        margin-left: -50px;
     }
     .vacancy__content {
         display: flex;
@@ -50,5 +50,8 @@
             font-family: v.$mainFont;
             font-size: 20px;
         }
+    }
+    .vacancy__leaf {
+        inset: auto -50px 0 auto;
     }
 }

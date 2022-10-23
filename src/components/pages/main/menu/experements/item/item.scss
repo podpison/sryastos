@@ -24,13 +24,15 @@
 }
 
 .main-page__experements-item {
-    background-size: 100% 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 25px;
     justify-content: flex-end;
+    position: relative;
     &:hover {
+        .main-page__experements-item-img {
+            filter: brightness(50%);
+        }
         .main-page__experements-items-description {
             opacity: 1;
             visibility: visible;
@@ -45,9 +47,20 @@
             grid-area: a#{$i};
         }
     }
+
+    .main-page__experements-item-img {
+        transition: filter .25s;
+        background-size: 100% 100%;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        z-index: -1;
+    }
     .main-page__experements-items-heading {
         color: white;
         font-size: 50px;
+        padding-left: 25px;
     }
     .main-page__experements-items-description {
         opacity: 0;
@@ -56,5 +69,6 @@
         max-height: 0;
         overflow: hidden;
         animation: showDescription_fadeOut .3s ease-out;
+        padding: 0 0 25px 25px;
     }
 }

@@ -1,17 +1,30 @@
+@use './../../../../../v';
+
 .other-coffe-shops .other-coffe-shops__item {
+    &:hover {
+        .other-coffe-shops__item-heading {
+            .other-coffe-shops__item-name, .other-coffe-shops__item-address {
+                color: v.$greenHover;
+            }
+        }
+    }
     .other-coffe-shops__item-heading {
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
         .other-coffe-shops__item-name {
             font-size: 35px;
+            transition: color .25s;
         }
         .other-coffe-shops__item-address {
-
+            transition: color .25s;
         }
     }
-    .other-coffe-shops__item-img {
+    .other-coffe-shops__item-img-container {
         margin-top: 10px;
-        width: 100%;
+        height: calc(100% - 47px);
+        .other-coffe-shops__item-img {
+            width: 100%;
+        }
     }
 }

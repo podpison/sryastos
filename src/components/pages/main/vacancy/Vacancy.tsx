@@ -1,5 +1,7 @@
 import './vacancy.scss';
 import employeeImg from './../../../../assets/img/vacancy/vacancy.webp';
+import { Leaf } from './../../../ui/laef/Leaf';
+import leaf from './../../../../assets/img/leaf/6.webp';
 
 export const Vacancy: React.FC = () => {
   return <section className='vacancy'>
@@ -15,5 +17,6 @@ export const Vacancy: React.FC = () => {
       </div>
       <button className='vacancy__button'>Заполнить анкету</button>
     </div>
+    <Leaf src={leaf} className='vacancy__leaf' />
   </section>
 };

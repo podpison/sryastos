@@ -1,7 +1,15 @@
 .other-coffe-shops {
     margin-top: 90px;
+    position: relative;
+    .other-coffe-shops__leaf {
+        top: -4%;
+        width: 300px;
+    }
     .other-coffe-shops__heading {
         font-size: 80px;
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 10%;
     }
     .other-coffe-shops__items {
         display: grid;

@@ -6,6 +6,10 @@ import item4Img from './../../../../../assets/img/experement/4.webp';
 import item5Img from './../../../../../assets/img/experement/5.webp';
 import item6Img from './../../../../../assets/img/experement/6.webp';
 import { Item } from './item/Item';
+import leaf3 from './../../../../../assets/img/leaf/3.webp';
+import leaf4 from './../../../../../assets/img/leaf/4.webp';
+import leaf5 from './../../../../../assets/img/leaf/5.webp';
+import { Leaf } from '../../../../ui/laef/Leaf';
 
 const items = [
   {
@@ -44,6 +48,9 @@ export const Experements: React.FC = () => {
   const Items = items.map((i, index) => <Item {...i} key={index} />)
 
   return <div className='main-page__experements'>
+    <Leaf className='main-page__leaf3' src={leaf3} />
+    <Leaf className='main-page__leaf4' src={leaf4} />
+    <Leaf className='main-page__leaf5' src={leaf5} />
     <h5 className='main-page__experements-heading'>Мы любим эксперименты, интересные вкусы и не боимся ломать стереотипы!</h5>
     <div className='main-page__experements-items'>
       {Items}

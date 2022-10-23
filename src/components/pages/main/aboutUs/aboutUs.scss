@@ -8,8 +8,14 @@
 .about-us {
     display: flex;
     justify-content: space-between;
-    margin-top: 70px;
     position: relative;
+    margin-top: 70px;
+    padding: 0 20px;
+    .about-us__leaf {
+        left: -50px;
+        top: -23%;
+        z-index: 1;
+    }
     .about-us__img1-container {
         position: relative;
         .about-us__img1 {
@@ -30,7 +36,7 @@
         .about-us__small-fairy-lights2 {
             @include fairyLights;
             top: 20%;
-            left: -13%;
+            left: -70px;
         }
     }
     .about-us__content {
@@ -53,7 +59,7 @@
             }
         }
         .abous_us_info {
-            margin-top: 100px;
+            margin-top: 200px;
             max-width: 450px;
             .abous_us_info-heading {
                 font-size: 70px;

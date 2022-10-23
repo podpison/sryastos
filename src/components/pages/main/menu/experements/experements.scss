@@ -1,5 +1,22 @@
+@use './../../../../../v';
+
 .main-page__experements {
     margin-top: 60px;
+    position: relative;
+    max-width: v.$smallContainer;
+    margin: 60px auto 0;
+    .main-page__leaf3 {
+        right: -182px;
+        top: -30px;
+    }
+    .main-page__leaf4 {
+        left: -182px;
+        top: 30%;
+    }
+    .main-page__leaf5 {
+        bottom: -14%;
+        left: -182px;
+    }
     .main-page__experements-heading {
         font-size: 25px;
         text-align: center;
