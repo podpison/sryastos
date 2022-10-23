@@ -1,0 +1,71 @@
+@use './../../../../v';
+
+.mobile-menu {
+    position: fixed;
+    z-index: 10;
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+    @media screen and (min-width: 1041px) {
+        display: none;
+    }
+    &.mobile-menu_open {
+        .mobile-menu__burger {
+            display: none;
+        }
+        .mobile-menu__inner {
+            display: flex;
+        }
+        .mobile-menu__shadow {
+            display: block;
+        }
+    }
+    .mobile-menu__shadow {
+        display: none;
+        position: absolute;
+        width: 100vw;
+        background-color: rgba(0, 0, 0, .7);
+        height: 1000vw;
+        left: -5px;
+        z-index: 2;
+    }
+    .mobile-menu__burger {
+        background-color: #FFFAEF;
+        border-radius: 4px;
+        padding: 9px;
+        margin: 25px 25px auto auto;
+        cursor: pointer;
+        transition: background-color .25s;
+        &:hover {
+            background-color: #f3efe5;
+        }
+    }
+    .mobile-menu__inner {
+        background-color: #FFFAEF;
+        width: 100vw;
+        margin-right: auto;
+        margin-left: -5px;
+        display: none;
+        padding: 15px;
+        justify-content: center;
+        position: relative;
+        z-index: 12;
+        .mobile-menu__logo {
+            width: 80px;
+            position: absolute;
+            inset: 17px auto auto 10px; 
+        }
+        .mobile-menu__nav {
+            flex-direction: column;
+            align-items: center;
+            row-gap: 0.5em;
+            margin-left: 0;
+        }
+        .mobile-menu__nav-closer {
+            position: absolute;
+            inset: 14px 15px auto auto;
+            width: 30px;
+            cursor: pointer;
+        }
+    }
+}

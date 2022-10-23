@@ -15,6 +15,9 @@
         .other-coffe-shops__item-name {
             font-size: 35px;
             transition: color .25s;
+            @media screen and (max-width: 1040px) {
+                font-size: 30px;
+            }
         }
         .other-coffe-shops__item-address {
             transition: color .25s;
@@ -23,6 +26,11 @@
     .other-coffe-shops__item-img-container {
         margin-top: 10px;
         height: calc(100% - 47px);
+        .image-shadow {
+            @media screen and (max-width: 1040px) {
+                height: calc(100% + 4px);
+            }
+        }
         .other-coffe-shops__item-img {
             width: 100%;
         }

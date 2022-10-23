@@ -1,4 +1,7 @@
 .leaf {
     position: absolute;
     z-index: -1;
+    @media screen and (max-width: 1040px) {
+        display: none;
+    }
 }

@@ -2,15 +2,13 @@
 
 .footer {
     @include v.fullBleed(null, v.$green);
-    display: grid;
-    align-items: center;
-    grid-template-columns: max-content 1fr;
-    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    padding: max(10px, 1.25%) max(20px, 5.3vw) max(5px, 1%);
     & > p {
         color: white;
     }
     .footer__trademark {
         font-size: 25px;
-        margin: 0 auto;
     }
 }

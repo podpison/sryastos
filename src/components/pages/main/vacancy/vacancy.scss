@@ -2,8 +2,8 @@
 
 .vacancy {
     display: grid;
-    grid-template-columns: calc(v.$maxWidth/ 2) 1fr;
-    gap: 120px;
+    grid-template-columns: 50% calc(50% - 7.4%);
+    gap: 7.4%;
     position: relative;
     .vacancy__vector-container {
         position: absolute;
@@ -19,7 +19,6 @@
     }
     .vacancy__employee {
         width: 100%;
-        margin-left: -50px;
     }
     .vacancy__content {
         display: flex;
@@ -27,24 +26,33 @@
         justify-content: center;
         .vacancy__sign1 {
             font-size: 60px;
+            @media screen and (max-width: 1040px) {
+                font-size: 50px
+            }
         }
         .vacancy__sings23 {
             .vacancy__sign2 {
                 font-size: 50px;
-                margin-top: 120px;
+                margin-top: 2.4em;
+                @media screen and (max-width: 1040px) {
+                    font-size: 40px
+                }
             }
             .vacancy__sign3 {
                 font-size: 30px;
                 color: rgba(74, 73, 73, 0.47);
-                margin-top: 20px;
+                margin-top: .66em;
+                @media screen and (max-width: 1040px) {
+                    font-size: 20px
+                }
             }
         }
         .vacancy__button {
             color: white;
             background-color: v.$green;
-            padding: 25px 60px;
+            padding: 1.25em 3em;
             border: none;
-            margin-top: 80px;
+            margin-top: 12%;
             width: fit-content;
             cursor: pointer;
             font-family: v.$mainFont;
@@ -52,6 +60,7 @@
         }
     }
     .vacancy__leaf {
-        inset: auto -50px 0 auto;
+        inset: auto 0 0 auto;
+        width: calc(25px + 13vw);
     }
 }

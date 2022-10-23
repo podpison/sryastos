@@ -47,7 +47,7 @@
                 &:nth-child(1) {
                     transform: rotate(-12.63deg);
                     & > img {
-                        transform: rotate(12deg);
+                        transform: rotate(13deg) scaleY(0.968);
                     }
                 }
                 &:nth-child(2) {

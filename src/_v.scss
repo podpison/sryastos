@@ -29,3 +29,11 @@ $smallContainer: 1235px;
     }
   }
 }
+
+@mixin greenHover {
+  color: $green;
+  transition: color .25s;
+  &:hover {
+    color: $greenHover;
+  }
+}

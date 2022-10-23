@@ -6,17 +6,36 @@
     flex-direction: column;
     justify-content: center;
     margin: 0 auto;
-    height: 900px;
-    width: 480px;
+    height: 100vh;
+    min-height: 410px;
+    max-height: 900px;
+    align-items: center;
+    @media screen and (max-width: 768px) {
+        height: 90vh;
+    }
+    @media screen and (min-width: 578px) {
+        width: 480px;
+    }
     .main-page__hero-logo {
-        width: 512px;
-        height: 280px;
+        width: 100%;
         align-items: center;
+        @media screen and (max-width: 576px) {
+            width: 300px;
+        }
+        @media screen and (max-width: 320px) {
+            width: 100%;
+        }
     }
     .main-page__hero-heading {
         font-size: 70px;
         color: white;
         text-align: center;
         margin-top: 50px;
+        @media screen and (max-width: 1040px) {
+            font-size: 50px;    
+        }
+        @media screen and (max-width: 576px) {
+            font-size: 40px;    
+        }
     }
 }

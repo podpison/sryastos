@@ -1,13 +1,12 @@
 @use './v';
 
 body, html, #root, .app {
-    min-height: 100%;
+    height: 100%;
 }
 
 .app {
     display: flex;
     flex-direction: column;
-    max-width: v.$container;
     & > main {
         flex: 1 0 auto;
     }

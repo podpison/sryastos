@@ -2,7 +2,7 @@
     margin-top: 90px;
     position: relative;
     .other-coffe-shops__leaf {
-        top: -4%;
+        top: -5%;
         width: 300px;
     }
     .other-coffe-shops__heading {
@@ -10,11 +10,28 @@
         display: flex;
         justify-content: flex-end;
         margin-right: 10%;
+        @media screen and (max-width: 1040px) {
+            font-size: 70px;
+            margin-right: 0;
+            justify-content: center;
+        }
+        @media screen and (max-width: 768px) {
+            font-size: 60px;
+            row-gap: 0.4rem;
+            align-items: flex-start;
+            flex-direction: column;  
+        }
+        @media screen and (max-width: 576px) {
+            font-size: 40px;
+        }
     }
     .other-coffe-shops__items {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 30px 50px;
-        margin-top: 120px;
+        gap: max(15px, 1.6vw) max(25px, 2.7vw);
+        margin-top: 7.5%;
+        @media screen and (max-width: 768px) {
+            grid-template-columns: 1fr;
+        }
     }
 }

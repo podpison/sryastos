@@ -3,11 +3,35 @@
         font-size: 42px;
         text-align: end;
         margin-top: 34px;
+        @media screen and (max-width: 1040px) {
+            text-align: initial;   
+            font-size: 35px;
+        }
+        @media screen and (max-width: 400px) {
+            font-size: 30px;
+        }
     }
     .we-vote-for__items {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        gap: 43px;
+        gap: max(15px, 2.3vw);
         margin-top: 32px;
+        @media screen and (max-width: 1040px) {
+            grid-template-columns: repeat(2, 1fr);
+            margin-top: 16px;
+        }
+        .img-card {
+            @media screen and (max-width: 1040px) {
+                height: fit-content;
+                &:nth-child(2), &:nth-child(4) {
+                    margin-top: -56px
+                }
+            }
+            @media screen and (max-width: 768px) {
+                .img-card__name {
+                    font-size: 16px;
+                }
+            }
+        }
     }
 }
