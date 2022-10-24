@@ -57,10 +57,17 @@
         background-repeat: no-repeat;
         z-index: -1;
     }
+    $pl: max(5px, min(2.55vw, 25px));
     .main-page__experements-items-heading {
         color: white;
         font-size: 50px;
-        padding-left: 25px;
+        padding-left: $pl;
+        @media screen and (max-width: 1040px) {
+            font-size: 40px;
+        }
+        @media screen and (max-width: 768px) {
+            font-size: 33px;
+        }
     }
     .main-page__experements-items-description {
         opacity: 0;
@@ -69,6 +76,9 @@
         max-height: 0;
         overflow: hidden;
         animation: showDescription_fadeOut .3s ease-out;
-        padding: 0 0 25px 25px;
+        padding: 0 0 $pl $pl;
+        @media screen and (max-width: 768px) {
+            font-size: 14px;
+        }
     }
 }

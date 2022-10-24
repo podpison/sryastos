@@ -10,8 +10,12 @@
     min-height: 410px;
     max-height: 900px;
     align-items: center;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1040px) {
+        @include v.fullBleed('./../../../../assets/img/hero_mobile.webp');
         height: 90vh;
+    }
+    @media screen and (max-width: 768px) {
+        height: 80vh;
     }
     @media screen and (min-width: 578px) {
         width: 480px;

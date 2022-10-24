@@ -5,7 +5,8 @@
     position: relative;
     .main-page__menu-heading-container {
         @include v.fullBleed('./../../../../assets/img/menu.webp');
-        height: 800px;
+        max-height: 800px;
+        height: 70vw;
         display: flex;
         align-items: center;
         justify-content: center;

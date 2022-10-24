@@ -21,6 +21,10 @@
             margin-top: 16px;
         }
         .img-card {
+            padding: 5.45% 6.8%;
+            .img-card__img {
+                width: 100%;
+            }
             @media screen and (max-width: 1040px) {
                 height: fit-content;
                 &:nth-child(2), &:nth-child(4) {

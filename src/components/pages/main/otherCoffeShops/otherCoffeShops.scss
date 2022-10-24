@@ -1,6 +1,9 @@
 .other-coffe-shops {
     margin-top: 90px;
     position: relative;
+    @media screen and (max-width: 1040px) {
+        margin-top: max(30px, 6%);   
+    }
     .other-coffe-shops__leaf {
         top: -5%;
         width: 300px;
@@ -16,10 +19,10 @@
             justify-content: center;
         }
         @media screen and (max-width: 768px) {
-            font-size: 60px;
             row-gap: 0.4rem;
             align-items: flex-start;
             flex-direction: column;  
+            font-size: 45px;
         }
         @media screen and (max-width: 576px) {
             font-size: 40px;

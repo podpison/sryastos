@@ -1,12 +1,14 @@
 @use './v';
 
 body, html, #root, .app {
-    height: 100%;
+    min-height: 200vh;
 }
 
 .app {
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: clip;
     & > main {
         flex: 1 0 auto;
     }

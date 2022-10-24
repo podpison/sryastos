@@ -3,8 +3,11 @@
 .vacancy {
     display: grid;
     grid-template-columns: 50% calc(50% - 7.4%);
-    gap: 7.4%;
+    gap: 20px 7.4%;
     position: relative;
+    @media screen and (max-width: 768px) {
+        grid-template-columns: 1fr;
+    }
     .vacancy__vector-container {
         position: absolute;
         top: -2px;
@@ -19,11 +22,20 @@
     }
     .vacancy__employee {
         width: 100%;
+        @media screen and (max-width: 1610px) {
+            margin-left: -5px;
+        }
+        @media screen and (max-width: 768px) {
+            width: calc(100% + 10px);
+        }
     }
     .vacancy__content {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        @media screen and (max-width: 768px) {
+            margin-bottom: 20px;
+        }
         .vacancy__sign1 {
             font-size: 60px;
             @media screen and (max-width: 1040px) {
@@ -35,7 +47,13 @@
                 font-size: 50px;
                 margin-top: 2.4em;
                 @media screen and (max-width: 1040px) {
-                    font-size: 40px
+                    font-size: 37px;
+                }
+                @media screen and (max-width: 768px) {
+                    margin-top: 1em;
+                }
+                @media screen and (max-width: 576px) {
+                    font-size: 35px;
                 }
             }
             .vacancy__sign3 {
@@ -57,6 +75,10 @@
             cursor: pointer;
             font-family: v.$mainFont;
             font-size: 20px;
+            @media screen and (max-width: 768px) {
+                padding: 1em 2em;
+                margin-top: 5%;
+            }
         }
     }
     .vacancy__leaf {

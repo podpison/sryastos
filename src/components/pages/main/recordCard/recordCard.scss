@@ -2,15 +2,22 @@
 
 .main-page__record-card {
     @include v.fullBleed('./../../../../assets/img/card/card_background.webp');
-    height: 1100px;
+    height: 59vw;
+    min-height: 320px;
     margin-top: 50px;
-    position: relative;
     .main-page__record-card-card {
         width: 80%;
+        min-width: 400px;
         position: absolute;
+        max-height: 950px;
         bottom: -10px;
         left: 50%;
         transform: translateX(-50%);
+        z-index: -1;
+        @media screen and (max-width: 420px) {
+            width: 100%;
+            min-width: initial;
+        }
     }
     .main-page__record-card-vector-container {
         position: absolute;
