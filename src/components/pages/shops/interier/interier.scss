@@ -1,0 +1,25 @@
+.interier {
+    margin-top: 50px;
+    .interier__img1 {
+        max-height: 856px;
+    }
+    .interier__img2 {
+        margin: auto;
+        display: block;
+        max-height: 734px;
+        margin-top: 80px;
+    }
+    .interier__inner1 {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        gap: 45px;
+        margin-top: 40px;
+        .interier__img3 {
+            max-height: 766px;
+        }
+        .interier__img4 {
+            max-height: 857px;
+        }
+    }
+}

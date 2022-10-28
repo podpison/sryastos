@@ -1,5 +1,5 @@
 import './recordCard.scss';
-import recordCardImg from './../../../../assets/img/card/card.webp'
+import recordCardImg from './../../../../assets/img/main_page/card/card.webp'
 
 export const RecordCard: React.FC = () => {
   return <section className='main-page__record-card'>

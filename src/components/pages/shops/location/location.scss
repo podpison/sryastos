@@ -1,0 +1,33 @@
+@use './../../../../v';
+
+.location {
+    background-color: v.$green;
+    margin-top: 100px;
+    .location__inner {
+        display: grid;
+        grid-template-areas: 'h t2' 't1 t2';
+        grid-template-columns: 1fr 1fr;
+        padding: 60px 0;
+        max-width: 1250px;
+        margin: 0 auto;
+        column-gap: 130px;
+        .location__item {
+            color: black;
+            font-size: 23px;
+            line-height: 144%;
+            letter-spacing: 0.02em;
+            
+            @for $i from 2 through 3 {
+                &:nth-child(#{$i}) {
+                    grid-area: t#{$i - 1};
+                }
+            }
+        }
+        .location__heading {
+            font-weight: 700;
+            font-size: 100px;
+            grid-area: h;
+            color: black;
+        }
+    }
+}

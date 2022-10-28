@@ -1,7 +1,7 @@
 @use './../../../../v';
 
 .main-page .main-page__hero {
-    @include v.fullBleed('./../../../../assets/img/hero.webp');
+    @include v.fullBleed('./../../../../assets/img/main_page/hero.webp');
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -11,7 +11,7 @@
     max-height: 900px;
     align-items: center;
     @media screen and (max-width: 1040px) {
-        @include v.fullBleed('./../../../../assets/img/hero_mobile.webp');
+        @include v.fullBleed('./../../../../assets/img/main_page/hero_mobile.webp');
         height: 90vh;
     }
     @media screen and (max-width: 768px) {
@@ -31,15 +31,8 @@
         }
     }
     .main-page__hero-heading {
-        font-size: 70px;
         color: white;
         text-align: center;
         margin-top: 50px;
-        @media screen and (max-width: 1040px) {
-            font-size: 50px;    
-        }
-        @media screen and (max-width: 576px) {
-            font-size: 40px;    
-        }
     }
 }

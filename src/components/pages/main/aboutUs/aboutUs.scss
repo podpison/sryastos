@@ -3,14 +3,23 @@
 @mixin fairyLights {
     position: absolute;
     z-index: -1;
+    @media screen and (max-width: 1040px) {
+        display: none;
+    }
 }
 
 .about-us {
-    display: flex;
+    display: grid;
+    grid-template-columns: 40% 60%;
     justify-content: space-between;
     position: relative;
     margin-top: 70px;
-    padding: 0 20px;
+    padding: 0 40px;
+    @media screen and (max-width: 1040px) {
+        grid-template-columns: 1fr;
+        padding: 0;
+        row-gap: 3.8%;
+    }
     .about-us__leaf {
         left: -50px;
         top: -23%;
@@ -19,18 +28,22 @@
     .about-us__img1-container {
         position: relative;
         .about-us__img1 {
-            width: 594px;
-            height: 828px;
+            width: 100%;
+            min-height: 100%;
+            @media screen and (max-width: 1040px) {
+                max-height: 800px;
+                object-fit: cover;
+            }
         }
         .about-us__fairy-lights {
             @include fairyLights;
-            top: 36%;
-            right: -70%;
+            top: 31%;
+            right: -65%;
         }
         .about-us__small-fairy-lights {
             @include fairyLights;
             top: 10%;
-            right: -43%;
+            right: -54%;
             transform: rotateZ(12deg);
         }
         .about-us__small-fairy-lights2 {
@@ -43,19 +56,37 @@
         .about-us__img-cards {
             display: flex;
             justify-content: flex-end;
+            position: relative;
             .about-us__img-card {
                 padding: 2.6% 2.6%;
-                .img-card__img {
-                    width: 280px;
+                width: calc(180px + 7vw);
+                max-width: 380px;
+                box-sizing: border-box;
+                @media screen and (max-width: 650px) {
+                    width: calc(20px + 34vw);   
                 }
                 &:nth-child(1) {
                     transform: rotate(-12.63deg);
+                    @media screen and (max-width: 1040px) {
+                        margin-right: 250px;
+                    }
+                    @media screen and (max-width: 650px) {
+                        margin-right: 150px;
+                    }
                     & > img {
                         transform: rotate(13deg) scaleY(0.968);
                     }
                 }
                 &:nth-child(2) {
                     transform: rotate(6.99deg);
+                    @media screen and (max-width: 1040px) {
+                        position: absolute;
+                        right: 100px;
+                        top: 100px;
+                    }
+                    @media screen and (max-width: 650px) {
+                        right: 40px;
+                    }
                     & > img {
                         transform: rotate(353.5deg);
                     }
@@ -63,14 +94,27 @@
             }
         }
         .abous_us_info {
-            margin-top: 200px;
-            max-width: 450px;
+            margin: 16.5% 0 0 16.5%;
+            @media screen and (min-width: 762px) {
+                max-width: 450px;
+            }
+            @media screen and (max-width: 1040px) {
+                margin: 10% 0 0 0;   
+            }
             .abous_us_info-heading {
                 font-size: 70px;
                 display: grid;
                 grid-template-columns: 1fr max-content;
-                gap: 40px;
+                gap: 8%;
                 align-items: center;
+                @media screen and (max-width: 1040px) {
+                    font-size: 60px;
+                    max-width: 40vw;
+                    min-width: 120px;
+                }
+                @media screen and (max-width: 1040px) {
+                    font-size: 50px;
+                }
                 &::before {
                     content: '';
                     display: block;
@@ -80,9 +124,12 @@
                 }
             }
             .abous_us_info-description {
-                margin-top: 60px;
+                margin-top: 50px;
                 font-size: 20px;
                 line-height: 120%;
+                @media screen and (max-width: 1040px) {
+                    margin-top: 30px;
+                }
             }
         }
     }

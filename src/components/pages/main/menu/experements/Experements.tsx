@@ -1,14 +1,14 @@
 import './experements.scss';
-import item1Img from './../../../../../assets/img/experement/1.webp';
-import item2Img from './../../../../../assets/img/experement/2.webp';
-import item3Img from './../../../../../assets/img/experement/3.webp';
-import item4Img from './../../../../../assets/img/experement/4.webp';
-import item5Img from './../../../../../assets/img/experement/5.webp';
-import item6Img from './../../../../../assets/img/experement/6.webp';
+import item1Img from './../../../../../assets/img/main_page/experement/1.webp';
+import item2Img from './../../../../../assets/img/main_page/experement/2.webp';
+import item3Img from './../../../../../assets/img/main_page/experement/3.webp';
+import item4Img from './../../../../../assets/img/main_page/experement/4.webp';
+import item5Img from './../../../../../assets/img/main_page/experement/5.webp';
+import item6Img from './../../../../../assets/img/main_page/experement/6.webp';
 import { Item } from './item/Item';
-import leaf3 from './../../../../../assets/img/leaf/3.webp';
-import leaf4 from './../../../../../assets/img/leaf/4.webp';
-import leaf5 from './../../../../../assets/img/leaf/5.webp';
+import leaf3 from './../../../../../assets/img/main_page/leaf/3.webp';
+import leaf4 from './../../../../../assets/img/main_page/leaf/4.webp';
+import leaf5 from './../../../../../assets/img/main_page/leaf/5.webp';
 import { Leaf } from '../../../../ui/laef/Leaf';
 
 const items = [

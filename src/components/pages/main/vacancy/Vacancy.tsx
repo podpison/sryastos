@@ -1,7 +1,7 @@
 import './vacancy.scss';
-import employeeImg from './../../../../assets/img/vacancy/vacancy.webp';
+import employeeImg from './../../../../assets/img/main_page/vacancy/vacancy.webp';
 import { Leaf } from './../../../ui/laef/Leaf';
-import leaf from './../../../../assets/img/leaf/6.webp';
+import leaf from './../../../../assets/img/main_page/leaf/6.webp';
 
 export const Vacancy: React.FC = () => {
   return <section className='vacancy'>

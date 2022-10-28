@@ -8,16 +8,12 @@ import { WeVoteFor } from "./weVoteFor/WeVoteFor"
 
 export const Main: React.FC = () => {
     return <main className="main-page">
-        {/* <Hero /> */}
-
+        <Hero />
         <AboutUs />
-        
-        {/* <WeVoteFor /> */}
-        {/* <OtherCoffeShops /> */}
-        
-        {/* <Menu /> */}
-
-        {/* <RecordCard /> */}
-        {/* <Vacancy /> */}
+        <WeVoteFor />
+        <OtherCoffeShops />
+        <Menu />
+        <RecordCard />
+        <Vacancy />
     </main>
 }

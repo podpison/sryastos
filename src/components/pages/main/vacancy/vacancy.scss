@@ -15,7 +15,7 @@
         height: 90px;
         z-index: 1;
         .vacancy__vector {
-            @include v.fullBleed('./../../../../assets/img/vacancy/vacancy_vector.webp');
+            @include v.fullBleed('./../../../../assets/img/main_page/vacancy/vacancy_vector.webp');
             z-index: 1;
             height: 100%;
         }

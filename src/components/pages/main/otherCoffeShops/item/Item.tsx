@@ -9,7 +9,7 @@ type Props = {
 }
 
 export const Item: React.FC<Props> = ({ address, name, src, to }) => {
-  return <Link to={`/shop/${to}`} className='other-coffe-shops__item image-shadow-element'>
+  return <Link to={`/shops/${to}`} className='other-coffe-shops__item image-shadow-element'>
     <div className='other-coffe-shops__item-heading'>
       <h5 className='other-coffe-shops__item-name'>{name}</h5>
       <h6 className='other-coffe-shops__item-address'>{address}</h6>

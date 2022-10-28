@@ -4,7 +4,7 @@
     margin-top: 60px;
     position: relative;
     .main-page__menu-heading-container {
-        @include v.fullBleed('./../../../../assets/img/menu.webp');
+        @include v.fullBleed('./../../../../assets/img/main_page/menu.webp');
         max-height: 800px;
         height: 70vw;
         display: flex;

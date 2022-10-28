@@ -1,8 +1,8 @@
 import './weVoteFor.scss';
-import item1Img from './../../../../assets/img/weVoteFor/1.webp';
-import item2Img from './../../../../assets/img/weVoteFor/2.webp';
-import item3Img from './../../../../assets/img/weVoteFor/3.webp';
-import item4Img from './../../../../assets/img/weVoteFor/4.webp';
+import item1Img from './../../../../assets/img/main_page/weVoteFor/1.webp';
+import item2Img from './../../../../assets/img/main_page/weVoteFor/2.webp';
+import item3Img from './../../../../assets/img/main_page/weVoteFor/3.webp';
+import item4Img from './../../../../assets/img/main_page/weVoteFor/4.webp';
 import { ImgCard } from '../../../ui/ImgCard/ImgCard';
 
 const cardsData = [

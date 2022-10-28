@@ -1,0 +1,62 @@
+@use "./../../../../v";
+
+.shops-page {
+    .shops-page__header {
+        margin-top: 50px;
+        max-width: 1175px;
+        text-align: center;
+        margin: auto;
+        .shops-page__shop-information {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            margin-top: 30px;
+            & > div {
+                padding: 50px;
+                flex: 1 0 auto;
+                
+                $border: 1px solid #D9D9D9;
+                &:nth-child(1) {
+                    border-top: $border;
+                    border-bottom: $border;
+                    border-left: $border;
+                    position: relative;
+                    &::after {
+                        content: "";
+                        width: 1px;
+                        height: calc(100% - 52px);
+                        transform: translateY(-50%);
+                        display: block;
+                        position: absolute;
+                        inset: 50% 0 auto auto;
+                        background-color: #D9D9D9;
+                    }
+                }
+                &:nth-child(2) {
+                    border-top: $border;
+                    border-bottom: $border;
+                    border-right: $border;
+                }
+                p {
+                    font-size: 40px;
+                    margin-top: .5em;
+                }
+            }
+        }
+        .shops-page__nav {
+            margin-top: 60px;
+            .shops-page__nav-inner {
+                display: flex;
+                justify-content: space-evenly;
+                font-size: 40px;
+            }
+            .shops-page__nav-item {
+                cursor: pointer;
+                border-bottom: 2px solid transparent;
+                transition: border-color .25s;
+                &:hover {
+                    border-color: v.$green;
+                }
+            }
+        }
+    }
+}

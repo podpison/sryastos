@@ -1,0 +1,28 @@
+.otherImages {
+    margin-top: 100px;
+    max-width: 1215px;
+    margin: 100px auto 0;
+    .otherImages__inner1 {
+        display: flex;
+        gap: 135px;
+        .otherImages__img5 {
+            max-height: 731px;
+            margin-top: 15px;
+        }
+        .otherImages__img6 {
+            max-height: 856px;
+        }
+    }
+    .otherImages__img7 {
+        max-width: 558px;
+        margin: -115px 116px 0 0;
+        float: right;
+    }
+    .otherImages__img8 {
+    }
+    .otherImages__img9 {
+        margin-top: -26%;
+        margin-left: auto;
+        display: flex;
+    }
+}

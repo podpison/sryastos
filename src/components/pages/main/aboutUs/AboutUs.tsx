@@ -1,11 +1,11 @@
 import './aboutUs.scss';
-import img1 from './../../../../assets/img/aboutUs/1.webp';
-import img2 from './../../../../assets/img/aboutUs/2.webp';
-import img3 from './../../../../assets/img/aboutUs/3.webp';
-import fairyLights from './../../../../assets/img/aboutUs/fairyLights.webp';
-import fairyLights_small from './../../../../assets/img/aboutUs/fairyLights_small.webp';
+import img1 from './../../../../assets/img/main_page/aboutUs/1.webp';
+import img2 from './../../../../assets/img/main_page/aboutUs/2.webp';
+import img3 from './../../../../assets/img/main_page/aboutUs/3.webp';
+import fairyLights from './../../../../assets/img/main_page/aboutUs/fairyLights.webp';
+import fairyLights_small from './../../../../assets/img/main_page/aboutUs/fairyLights_small.webp';
 import { ImgCard } from '../../../ui/ImgCard/ImgCard';
-import leaf1 from './../../../../assets/img/leaf/1.webp';
+import leaf1 from './../../../../assets/img/main_page/leaf/1.webp';
 import { Leaf } from '../../../ui/laef/Leaf';
 
 export const AboutUs: React.FC = () => {
