@@ -5,6 +5,7 @@ import { Nav } from '../nav/Nav';
 import closeMenuIcon from './../../../../assets/img/close.svg'; //Close icon by Icons8
 import logo from './../../../../assets/img/logo.svg';
 import cn from 'classnames';
+import { Link } from 'react-router-dom';
 
 export const MobileMenu: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,7 +26,9 @@ export const MobileMenu: React.FC = () => {
     <div ref={shadowRef} className='mobile-menu__shadow' />
     <img src={burger} className='mobile-menu__burger' onClick={handleOpenStatus} alt='burger' />
     <div className='mobile-menu__inner'>
-      <img className='mobile-menu__logo' src={logo} alt='logo' />
+      <Link to='/'>
+        <img className='mobile-menu__logo' src={logo} alt='logo' />
+      </Link>
       <Nav className='mobile-menu__nav' />
       <img src={closeMenuIcon} onClick={handleOpenStatus} className='mobile-menu__nav-closer' alt='close' />
     </div>

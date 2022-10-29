@@ -1,7 +1,30 @@
+import { NavHashLink } from 'react-router-hash-link';
+import { HashLinks } from '../../../ui/hashLinks/HashLinks';
 import { shops } from '../../main/otherCoffeShops/OtherCoffeShops';
 import './header.scss';
 
-const navItems = ['Локация', 'Интерьер', 'Оставить отзыв', 'Карта', 'Event'];
+const hashLinks = [
+  {
+    name: 'Локация',
+    hash: 'location'
+  },
+  {
+    name: 'Интерьер',
+    hash: 'interier'
+  },
+  {
+    name: 'Оставить отзыв',
+    hash: 'review'
+  },
+  {
+    name: 'Карта',
+    hash: 'map'
+  },
+  {
+    name: 'Event',
+    hash: 'event'
+  },
+];
 
 type Props = {
   shopName: string
@@ -9,7 +32,6 @@ type Props = {
 
 export const Header: React.FC<Props> = ({ shopName }) => {
   const currentShop = shops.find(s => s.to === shopName);
-  const NavItems = navItems.map((i, index) => <li className='shops-page__nav-item' key={index}>{i}</li>);
 
   return <section className='shops-page__header'>
     <h1>Sorrrybabuska<br />{currentShop?.name || ''}</h1>
@@ -23,10 +45,6 @@ export const Header: React.FC<Props> = ({ shopName }) => {
         <p>{currentShop?.address || ''}</p>
       </div>
     </div>
-    <nav className='shops-page__nav'>
-      <ul className='shops-page__nav-inner'>
-        {NavItems}
-      </ul>
-    </nav>
+    <HashLinks data={hashLinks} />
   </section>
 };

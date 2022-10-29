@@ -10,6 +10,6 @@ export const Nav: React.FC<Props> = ({ className }) => {
   return <nav className={cn('header__nav', className)}>
     <Link hashLink to='/#coffe-shops' name='Наши кофейни' />
     <Link to='/menu' name='Меню' />
-    <Link to='/vacancy' name='Вакансии' />
+    <Link hashLink to='/#vacancy' name='Вакансии' />
   </nav>
 };

@@ -1,0 +1,17 @@
+.menu__subcategory {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    .menu__subcategory-heading-container {
+        display: grid;
+        grid-template-columns: 220px calc(1225px - 220px - 20px);
+        gap: 20px;
+        max-width: 1225px;
+        margin: 0 auto 45px;
+        .menu__subcategory-heading {
+            font-weight: 700;
+            font-size: 40px;
+            margin-left: auto;
+        }
+    }
+}

@@ -5,6 +5,7 @@ import { Main } from './components/pages/main/Main'
 import { NotFound } from './components/pages/notFound/NotFound'
 import { Footer } from './components/ui/footer/Footer'
 import { Shops } from './components/pages/shops/Shops'
+import { Menu } from './components/pages/menu/Menu'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Main />} />
         <Route path='/shops/:shopName' element={<Shops />} />
+        <Route path='/menu' element={<Menu />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
       <Footer />

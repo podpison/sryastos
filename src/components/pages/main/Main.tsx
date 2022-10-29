@@ -1,6 +1,7 @@
+import { Menu } from "../../ui/menu/Menu"
 import { AboutUs } from "./aboutUs/AboutUs"
 import { Hero } from "./hero/Hero"
-import { Menu } from "./menu/Menu"
+import { Experements } from "./experements/Experements"
 import { OtherCoffeShops } from "./otherCoffeShops/OtherCoffeShops"
 import { RecordCard } from "./recordCard/RecordCard"
 import { Vacancy } from "./vacancy/Vacancy"
@@ -12,7 +13,7 @@ export const Main: React.FC = () => {
         <AboutUs />
         <WeVoteFor />
         <OtherCoffeShops />
-        <Menu />
+        <Menu><Experements /></Menu>
         <RecordCard />
         <Vacancy />
     </main>

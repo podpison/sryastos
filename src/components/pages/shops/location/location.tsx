@@ -1,7 +1,7 @@
 import './location.scss';
 
 export const Location: React.FC = () => {
-  return <section className='location'>
+  return <section className='location' id='location'>
     <div className='location__inner'>
       <h2 className='location__heading'>Локация</h2>
       <p className='location__item'>Тропический оазис в сердце  Ногинска. Утопающая в зелени кофейня, стала визитной карточкой нашей сети,а уютная уличная вернада  прекрасно вписалась в историческую часть города.</p>

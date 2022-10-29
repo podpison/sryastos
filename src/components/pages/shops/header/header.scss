@@ -42,21 +42,5 @@
                 }
             }
         }
-        .shops-page__nav {
-            margin-top: 60px;
-            .shops-page__nav-inner {
-                display: flex;
-                justify-content: space-evenly;
-                font-size: 40px;
-            }
-            .shops-page__nav-item {
-                cursor: pointer;
-                border-bottom: 2px solid transparent;
-                transition: border-color .25s;
-                &:hover {
-                    border-color: v.$green;
-                }
-            }
-        }
     }
 }

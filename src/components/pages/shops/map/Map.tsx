@@ -10,7 +10,7 @@ const defaultProps = {
 };
 
 export const Map: React.FC = () => {
-  return <section className='map'>
+  return <section className='map' id='map'>
     <GoogleMapReact
       defaultCenter={defaultProps.center}
       defaultZoom={defaultProps.zoom}

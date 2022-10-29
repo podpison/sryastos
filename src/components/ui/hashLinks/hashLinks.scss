@@ -1,0 +1,18 @@
+@use './../../../v';
+
+.hashLinks {
+    margin-top: 60px;
+    .hashLinks__inner {
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 40px;
+    }
+    .hashLinks__item {
+        cursor: pointer;
+        border-bottom: 2px solid transparent;
+        transition: border-color .25s;
+        &:hover {
+            border-color: v.$green;
+        }
+    }
+}

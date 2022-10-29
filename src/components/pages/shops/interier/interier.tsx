@@ -5,7 +5,7 @@ import img3 from '../../../../assets/img/shops/balashikha/3.webp';
 import img4 from '../../../../assets/img/shops/balashikha/4.webp';
 
 export const Interier: React.FC = () => {
-  return <section className='interier'>
+  return <section className='interier' id='interier'>
     <img className='interier__img1' src={img1} alt='image 1' />
     <img className='interier__img2' src={img2} alt='image 2' />
     <div className='interier__inner1'>

@@ -1,0 +1,14 @@
+// vite.config.ts
+import { defineConfig } from "file:///C:/Users/uvaro/Desktop/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%B0%D0%BF%D0%BA%D0%B0/sryastos/node_modules/vite/dist/node/index.js";
+import react from "file:///C:/Users/uvaro/Desktop/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%B0%D0%BF%D0%BA%D0%B0/sryastos/node_modules/@vitejs/plugin-react/dist/index.mjs";
+var vite_config_default = defineConfig({
+  plugins: [react()],
+  server: {
+    host: true,
+    port: 3e3
+  }
+});
+export {
+  vite_config_default as default
+};
+//# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsidml0ZS5jb25maWcudHMiXSwKICAic291cmNlc0NvbnRlbnQiOiBbImNvbnN0IF9fdml0ZV9pbmplY3RlZF9vcmlnaW5hbF9kaXJuYW1lID0gXCJDOlxcXFxVc2Vyc1xcXFx1dmFyb1xcXFxEZXNrdG9wXFxcXFx1MDQxRFx1MDQzRVx1MDQzMlx1MDQzMFx1MDQ0RiBcdTA0M0ZcdTA0MzBcdTA0M0ZcdTA0M0FcdTA0MzBcXFxcc3J5YXN0b3NcIjtjb25zdCBfX3ZpdGVfaW5qZWN0ZWRfb3JpZ2luYWxfZmlsZW5hbWUgPSBcIkM6XFxcXFVzZXJzXFxcXHV2YXJvXFxcXERlc2t0b3BcXFxcXHUwNDFEXHUwNDNFXHUwNDMyXHUwNDMwXHUwNDRGIFx1MDQzRlx1MDQzMFx1MDQzRlx1MDQzQVx1MDQzMFxcXFxzcnlhc3Rvc1xcXFx2aXRlLmNvbmZpZy50c1wiO2NvbnN0IF9fdml0ZV9pbmplY3RlZF9vcmlnaW5hbF9pbXBvcnRfbWV0YV91cmwgPSBcImZpbGU6Ly8vQzovVXNlcnMvdXZhcm8vRGVza3RvcC8lRDAlOUQlRDAlQkUlRDAlQjIlRDAlQjAlRDElOEYlMjAlRDAlQkYlRDAlQjAlRDAlQkYlRDAlQkElRDAlQjAvc3J5YXN0b3Mvdml0ZS5jb25maWcudHNcIjtpbXBvcnQgeyBkZWZpbmVDb25maWcgfSBmcm9tICd2aXRlJ1xuaW1wb3J0IHJlYWN0IGZyb20gJ0B2aXRlanMvcGx1Z2luLXJlYWN0J1xuXG4vLyBodHRwczovL3ZpdGVqcy5kZXYvY29uZmlnL1xuZXhwb3J0IGRlZmF1bHQgZGVmaW5lQ29uZmlnKHtcbiAgcGx1Z2luczogW3JlYWN0KCldLFxuICBzZXJ2ZXI6IHtcbiAgICBob3N0OiB0cnVlLFxuICAgIHBvcnQ6IDMwMDBcbiAgfVxufSlcbiJdLAogICJtYXBwaW5ncyI6ICI7QUFBbVgsU0FBUyxvQkFBb0I7QUFDaFosT0FBTyxXQUFXO0FBR2xCLElBQU8sc0JBQVEsYUFBYTtBQUFBLEVBQzFCLFNBQVMsQ0FBQyxNQUFNLENBQUM7QUFBQSxFQUNqQixRQUFRO0FBQUEsSUFDTixNQUFNO0FBQUEsSUFDTixNQUFNO0FBQUEsRUFDUjtBQUNGLENBQUM7IiwKICAibmFtZXMiOiBbXQp9Cg==

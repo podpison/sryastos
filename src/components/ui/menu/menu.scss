@@ -1,16 +1,16 @@
-@use './../../../../v';
+@use './../../../v';
 
-.main-page__menu {
+.menu {
     margin-top: 60px;
     position: relative;
-    .main-page__menu-heading-container {
-        @include v.fullBleed('./../../../../assets/img/main_page/menu.webp');
+    .menu__heading-container {
+        @include v.fullBleed('./../../../assets/img/menu.webp');
         max-height: 800px;
         height: 70vw;
         display: flex;
         align-items: center;
         justify-content: center;
-        .main-page__menu-heading {
+        .menu__heading {
             color: white;
             font-size: 90px;
         }

@@ -1,0 +1,38 @@
+.menu-page {
+    .menu-page__header {
+        .menu__heading-container {
+            max-height: 550px;
+        }
+    }
+    .menu-page__categories-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu__coffee {
+        display: grid;
+        grid-template-columns: repeat(2, calc(1225px / 2));
+        max-width: 1225px;
+        margin: auto;
+        .menu__category-item {
+            display: flex;
+            justify-content: space-between;
+            .menu__name {
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 117%;
+            }
+            .menu__capacities {
+                font-weight: 300;
+                font-size: 21px;
+                line-height: 133%;
+            }
+            .menu__prices {
+                font-weight: 500;
+                font-size: 21px;
+                line-height: 140%;
+                text-align: right;
+            } 
+        }
+    }
+}

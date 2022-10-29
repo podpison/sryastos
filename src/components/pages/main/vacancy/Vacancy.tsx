@@ -4,7 +4,7 @@ import { Leaf } from './../../../ui/laef/Leaf';
 import leaf from './../../../../assets/img/main_page/leaf/6.webp';
 
 export const Vacancy: React.FC = () => {
-  return <section className='vacancy'>
+  return <section id='vacancy' className='vacancy'>
     <div className='vacancy__vector-container'>
       <div className='vacancy__vector'/>
     </div>
