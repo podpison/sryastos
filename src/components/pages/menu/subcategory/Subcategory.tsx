@@ -6,7 +6,7 @@ type Props = {
   children: ReactNode
 }
 
-export const Subcategory: React.FC<Props> = ({ subcategory, children }) => {
+export const Subcategory: React.FC<Props> = ({ subcategory, children}) => {
   return <div className='menu__subcategory'>
     <div className='menu__subcategory-heading-container'>
       <h5 className='menu__subcategory-heading'>{subcategory}</h5>

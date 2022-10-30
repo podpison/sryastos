@@ -2,23 +2,49 @@ import { createReducer, createAction, createAsyncThunk } from "@reduxjs/toolkit"
 import { DocumentData } from "firebase/firestore";
 import { itemsAPI } from "../../api/api";
 
-export type MenuItemItemType = {
-  name: string
-  capacity: {
-    capacity: string
-    price: string
-  }[]
+export type CapaciyType = {
+  capacity: string
+  price: string
 }
 
-export type MenuItemType = {
+export type CoffeeItemItemType = {
+  name: string
+  cyrup?: boolean
+  capacity: CapaciyType[]
+}
+
+export type CoffeeItemType = {
   category: string
   subcategory: string
   description: string
-  items: MenuItemItemType[]
+  items: CoffeeItemItemType[]
+  samePriceItems: CoffeeItemItemType[]
+  kbju: {
+    calories: string
+    proteins: string
+    fats: string
+    carbohydrates: string
+  }
+}
+
+export type MenuCardItemType = {
+  name: string
+  description: string
+  src: string
+  capacity: CapaciyType[]
+}
+
+export type MenuCardType = {
+  category: string
+  description: string
+  subcategories: {
+    name: string
+    items: MenuCardItemType[]
+  }[]
 }
 
 const initialState = {
-  menu: [] as MenuItemType[]
+  menu: [] as CoffeeItemType[] | MenuCardType[]
 }
 export type StateKeysType = keyof typeof initialState;
 

@@ -1,3 +1,5 @@
+@use "./../../../../v";
+
 .menu__subcategory {
     display: flex;
     flex-direction: column;
@@ -12,6 +14,16 @@
             font-weight: 700;
             font-size: 40px;
             margin-left: auto;
+            position: relative;
+            &::before {
+                content: '';
+                display: block;
+                position: absolute;
+                width: 292px;
+                height: 1px;
+                background-color: v.$green;
+                inset: 50% 105% auto auto;
+            }
         }
     }
 }

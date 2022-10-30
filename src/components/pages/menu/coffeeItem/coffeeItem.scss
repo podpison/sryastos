@@ -1,0 +1,39 @@
+.menu-page__category-item {
+    $columnGap: 30px;
+
+    display: grid;
+    grid-template-columns: calc(81% - $columnGap / 2) calc(19% - $columnGap / 2);
+    gap: 3px $columnGap;
+    align-items: center;
+    .menu-page__name-and-capacities {
+        display: grid;
+        grid-template-columns: max-content 1fr max-content;
+        width: 100%;
+        .menu-page__name {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 117%;
+        }
+        .menu-page__dots {
+            white-space: nowrap;
+            overflow: hidden;
+            margin: auto 0 4px;
+            font-weight: 300;
+        }
+        .menu-page__capacities {
+            font-weight: 300;
+            font-size: 21px;
+            line-height: 133%;
+        }
+    }
+    .menu-page__prices {
+        font-weight: 500;
+        font-size: 21px;
+        line-height: 140%;
+        text-align: right;
+    }
+    .main-page__cyrup {
+        font-weight: 300;
+        font-size: 14px;
+    }
+}

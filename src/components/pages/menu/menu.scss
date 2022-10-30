@@ -1,38 +1,66 @@
+@use './../../../v';
+
 .menu-page {
-    .menu-page__header {
-        .menu__heading-container {
-            max-height: 550px;
-        }
+  .menu-page__header {
+    .menu__heading-container {
+      max-height: 550px;
     }
-    .menu-page__categories-container {
-        display: flex;
-        flex-direction: column;
+  }
+
+  .menu-page__categories-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu-page__coffee {
+    $gap: 70px;
+
+    display: grid;
+    grid-template-columns: calc(60% - $gap / 2) calc(40% - $gap / 2);
+    gap: $gap;
+    max-width: 1225px;
+    width: 100%;
+    margin: auto;
+
+    .menu-page__items {
+      display: flex;
+      flex-direction: column;
+      row-gap: 15px;
     }
 
-    .menu__coffee {
-        display: grid;
-        grid-template-columns: repeat(2, calc(1225px / 2));
-        max-width: 1225px;
-        margin: auto;
-        .menu__category-item {
-            display: flex;
-            justify-content: space-between;
-            .menu__name {
-                font-weight: 700;
-                font-size: 24px;
-                line-height: 117%;
-            }
-            .menu__capacities {
-                font-weight: 300;
-                font-size: 21px;
-                line-height: 133%;
-            }
-            .menu__prices {
-                font-weight: 500;
-                font-size: 21px;
-                line-height: 140%;
-                text-align: right;
-            } 
+    .menu-page__same-price-items {
+      margin: auto 0 19px;
+
+      .menu-page__items {
+        border: 1px solid v.$green;
+        padding: 30px 20px;
+      }
+
+      .menu-page__note {
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 130%;
+        margin-top: 10px;
+        padding: 0 15px;
+
+        &::before {
+          content: '*'
         }
+      }
+
+      .menu-page__to-volume {
+        padding: 0 15px;
+        margin-top: 20px;
+        grid-template-columns: 1fr max-content;
+      }
     }
+  }
+
+  .main-page__cards-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 35px 30px;
+    max-width: 1350px;
+    margin: auto;
+  }
 }
