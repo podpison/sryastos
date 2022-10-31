@@ -1,10 +1,12 @@
 @use './../../../v';
 
 .hashLinks {
-    margin-top: 60px;
+    margin-top: max(3.75%, 30px);
     .hashLinks__inner {
         display: flex;
         justify-content: space-evenly;
+        gap: 7px 15px;
+        flex-wrap: wrap;
         font-size: 40px;
     }
     .hashLinks__item {

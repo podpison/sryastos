@@ -13,7 +13,7 @@
   }
 
   .menu-page__coffee {
-    $gap: 70px;
+    $gap: 4.7%;
 
     display: grid;
     grid-template-columns: calc(60% - $gap / 2) calc(40% - $gap / 2);
@@ -22,10 +22,16 @@
     width: 100%;
     margin: auto;
 
+    @media screen and (max-width: 1040px) {
+      grid-template-columns: 1fr;
+      gap: 5.7%;
+    }
+
     .menu-page__items {
       display: flex;
       flex-direction: column;
       row-gap: 15px;
+
     }
 
     .menu-page__same-price-items {
@@ -33,7 +39,11 @@
 
       .menu-page__items {
         border: 1px solid v.$green;
-        padding: 30px 20px;
+        padding: 6.5% 4.3%;
+
+        @media screen and (max-width: 1040px) {
+          padding: 1.5%;
+        }
       }
 
       .menu-page__note {
@@ -50,17 +60,40 @@
 
       .menu-page__to-volume {
         padding: 0 15px;
-        margin-top: 20px;
+        margin-top: 4.2%;
         grid-template-columns: 1fr max-content;
+
+        @media screen and (max-width: 1040px) {
+          margin-top: 10px;
+        }
       }
     }
   }
 
   .main-page__cards-container {
+    @mixin columnWidth($columnsNumber) {
+      $columnWidth: calc(min(100vw, 1350px) / $columnsNumber - max(1.6vw, 20px) - 7px);
+      grid-template-columns: repeat(4, $columnWidth);
+    }
+    @include columnWidth(4);
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 35px 30px;
+    gap: max(1.6vw, 20px) max(1.8vw, 25px);
     max-width: 1350px;
     margin: auto;
+
+    @media screen and (max-width: 1040px) {
+      @include columnWidth(3);
+    }
+    @media screen and (max-width: 768px) {
+      @include columnWidth(2);
+    }
+    @media screen and (max-width: 576px) {
+      @include columnWidth(1);
+    }
+  }
+
+  .menu-page__links2 {
+    margin-bottom: max(9.4%, 70px);
+    margin-top: max(3.75%, 50px);
   }
 }

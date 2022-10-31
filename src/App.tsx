@@ -6,11 +6,13 @@ import { NotFound } from './components/pages/notFound/NotFound'
 import { Footer } from './components/ui/footer/Footer'
 import { Shops } from './components/pages/shops/Shops'
 import { Menu } from './components/pages/menu/Menu'
+import { ArrowUp } from './components/ui/arrowUp/ArrowUp'
 
 function App() {
 
   return (
     <div className="app">
+      <ArrowUp />
       <Header />
       <Routes>
         <Route path='/' element={<Main />} />

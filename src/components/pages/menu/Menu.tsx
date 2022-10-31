@@ -22,11 +22,11 @@ const hashLinks = [
   },
   {
     name: 'Авторские',
-    hash: 'Author\'s'
+    hash: 'authors'
   },
   {
     name: 'Ice Кофе',
-    hash: 'iceCoffe'
+    hash: 'ice_coffee'
   },
   {
     name: 'Смузи',
@@ -73,8 +73,8 @@ export const Menu: React.FC = () => {
 
   let Categories = categoriesInRightOrder.map((c, index) => {
     if (isCoffeeType(c)) {
-      let Items = c.items.map((i, index) => <CoffeeItem {...i} key={index} />);
-      let SamePriceItems = c.samePriceItems.map((i, index) => <CoffeeItem {...i} key={index} />);
+      let Items = c.items.map((i, index) => <CoffeeItem className='menu-page__item' {...i} key={index} />);
+      let SamePriceItems = c.samePriceItems.map((i, index) => <CoffeeItem className='menu-page__same-price-item' {...i} key={index} />);
 
       return <Category {...c} key={index}>
         <Subcategory subcategory={c.subcategory}>
@@ -115,5 +115,6 @@ export const Menu: React.FC = () => {
     <div className='menu-page__categories-container'>
       {Categories}
     </div>
+    <HashLinks className='menu-page__links2' data={hashLinks} />
   </main>
 };

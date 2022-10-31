@@ -1,0 +1,77 @@
+@use './../../../v';
+
+@keyframes showArrow {
+  from {
+    bottom: 1.3rem;
+  }
+
+  to {
+    bottom: 3rem;
+  }
+}
+
+@keyframes hideArrow {
+  from {
+    bottom: 3rem;
+  }
+
+  to {
+    bottom: 1.3rem;
+  }
+}
+
+
+.arrow-up {
+  z-index: 10;
+  position: fixed;
+  background-color: v.$green;
+  inset: auto 3rem 3rem auto;
+  padding: 0.3em;
+  border-radius: 50%;
+  display: flex;
+  cursor: pointer;
+  visibility: visible;
+  opacity: 1;
+  animation: showArrow .5s;
+  transition-duration: .5s;
+  transition: background-color .25s;
+
+  &:hover {
+    background-color: v.$greenHover;
+  }
+
+  @media screen and (max-width: 1040px) {
+    @keyframes showArrow {
+      from {
+        bottom: 1.3rem;
+      }
+
+      to {
+        bottom: 2rem;
+      }
+    }
+
+    @keyframes hideArrow {
+      from {
+        bottom: 2rem;
+      }
+
+      to {
+        bottom: 1.3rem;
+      }
+    }
+
+    inset: auto 2rem 2rem auto;
+  }
+
+  &.arrow-up_disabled {
+    animation: hideArrow .5s;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .arrow-up__img {
+    filter: invert(1);
+    width: 40px;
+  }
+}

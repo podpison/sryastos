@@ -15,7 +15,7 @@ export const CoffeeItem: React.FC<Props> = ({ capacity, name, cyrup, plusMode, c
     <p className='menu-page__name-and-capacities'>
       <span className='menu-page__name'>{name}</span>
       <span className='menu-page__dots'>....................................................................................................................................................................................</span>
-      <span className='menu-page__capacities'>{capacities}</span>
+      <span className='menu-page__capacities'>{capacities} мл.</span>
     </p>
     <p className='menu-page__prices'>{plusMode && '+'}{prices}₽</p>
     {cyrup && <p className='menu-page__cyrup'>С добавлением сиропа</p>}

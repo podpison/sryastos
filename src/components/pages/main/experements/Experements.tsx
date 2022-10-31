@@ -15,32 +15,38 @@ const items = [
   {
     src: item1Img,
     name: 'Кофе',
-    description: 'Для ценителей кофейной классики всегда найдется местечко под нашими пальмами что бы сбежать от городской суеты и насладиться вкусом свежесваренного эспрессо или чашечкой капучино'
+    description: 'Для ценителей кофейной классики всегда найдется местечко под нашими пальмами что бы сбежать от городской суеты и насладиться вкусом свежесваренного эспрессо или чашечкой капучино',
+    hash: 'coffee',
   },
   {
     src: item2Img,
     name: 'Авторские',
-    description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat suscipit quibusdam aspernatur earum incidunt quos nostrum exercitationem quo! Quibusdam, maxime?'
+    description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat suscipit quibusdam aspernatur earum incidunt quos nostrum exercitationem quo! Quibusdam, maxime?',
+    hash: 'authors',
   },
   {
     src: item3Img,
     name: 'Смузи',
-    description: 'Делаем смузи из натуральных ягод и фруктов прямиком с солнечного острова Бали!'
+    description: 'Делаем смузи из натуральных ягод и фруктов прямиком с солнечного острова Бали!',
+    hash: 'ice_coffee',
   },
   {
     src: item4Img,
     name: 'Ice кофе',
-    description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat suscipit quibusdam aspernatur earum incidunt quos nostrum exercitationem quo! Quibusdam, maxime?'
+    description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat suscipit quibusdam aspernatur earum incidunt quos nostrum exercitationem quo! Quibusdam, maxime?',
+    hash: 'smoothies',
   },
   {
     src: item5Img,
     name: 'Чай_какао',
-    description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat suscipit quibusdam aspernatur earum incidunt quos nostrum exercitationem quo! Quibusdam, maxime?'
+    description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat suscipit quibusdam aspernatur earum incidunt quos nostrum exercitationem quo! Quibusdam, maxime?',
+    hash: 'tea_cocoa',
   },
   {
     src: item6Img,
     name: 'Покушать',
-    description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat suscipit quibusdam aspernatur earum incidunt quos nostrum exercitationem quo! Quibusdam, maxime?'
+    description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat suscipit quibusdam aspernatur earum incidunt quos nostrum exercitationem quo! Quibusdam, maxime?',
+    hash: 'eat',
   }
 ]
 

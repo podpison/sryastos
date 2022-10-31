@@ -14,11 +14,19 @@ export type CoffeeItemItemType = {
 }
 
 export type CoffeeItemType = {
+  id: string
   category: string
   subcategory: string
   description: string
   items: CoffeeItemItemType[]
   samePriceItems: CoffeeItemItemType[]
+}
+
+export type MenuCardItemType = {
+  name: string
+  description: string
+  src: string
+  capacity: CapaciyType[]
   kbju: {
     calories: string
     proteins: string
@@ -27,14 +35,8 @@ export type CoffeeItemType = {
   }
 }
 
-export type MenuCardItemType = {
-  name: string
-  description: string
-  src: string
-  capacity: CapaciyType[]
-}
-
 export type MenuCardType = {
+  id: string
   category: string
   description: string
   subcategories: {
