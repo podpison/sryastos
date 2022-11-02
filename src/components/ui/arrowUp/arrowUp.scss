@@ -34,8 +34,7 @@
   opacity: 1;
   animation: showArrow .5s;
   transition-duration: .5s;
-  transition: background-color .25s;
-
+  
   &:hover {
     background-color: v.$greenHover;
   }
@@ -45,7 +44,7 @@
       from {
         bottom: 1.3rem;
       }
-
+      
       to {
         bottom: 2rem;
       }

@@ -53,6 +53,10 @@
         margin-top: 10px;
         padding: 0 15px;
 
+        @media screen and (max-width: 1040px) {
+          padding: 0 5px;
+        }
+
         &::before {
           content: '*'
         }
@@ -65,6 +69,7 @@
 
         @media screen and (max-width: 1040px) {
           margin-top: 10px;
+          padding: 0 5px;
         }
       }
     }
@@ -75,6 +80,7 @@
       $columnWidth: calc(min(100vw, 1350px) / $columnsNumber - max(1.6vw, 20px) - 7px);
       grid-template-columns: repeat(4, $columnWidth);
     }
+
     @include columnWidth(4);
     display: grid;
     gap: max(1.6vw, 20px) max(1.8vw, 25px);
@@ -84,9 +90,11 @@
     @media screen and (max-width: 1040px) {
       @include columnWidth(3);
     }
+
     @media screen and (max-width: 768px) {
       @include columnWidth(2);
     }
+
     @media screen and (max-width: 576px) {
       @include columnWidth(1);
     }

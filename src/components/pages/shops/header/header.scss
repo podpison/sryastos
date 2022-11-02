@@ -1,46 +1,76 @@
 @use "./../../../../v";
 
 .shops-page {
-    .shops-page__header {
-        margin-top: 50px;
-        max-width: 1175px;
-        text-align: center;
-        margin: auto;
-        .shops-page__shop-information {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            margin-top: 30px;
-            & > div {
-                padding: 50px;
-                flex: 1 0 auto;
-                
-                $border: 1px solid #D9D9D9;
-                &:nth-child(1) {
-                    border-top: $border;
-                    border-bottom: $border;
-                    border-left: $border;
-                    position: relative;
-                    &::after {
-                        content: "";
-                        width: 1px;
-                        height: calc(100% - 52px);
-                        transform: translateY(-50%);
-                        display: block;
-                        position: absolute;
-                        inset: 50% 0 auto auto;
-                        background-color: #D9D9D9;
-                    }
-                }
-                &:nth-child(2) {
-                    border-top: $border;
-                    border-bottom: $border;
-                    border-right: $border;
-                }
-                p {
-                    font-size: 40px;
-                    margin-top: .5em;
-                }
-            }
+  @media screen and (max-width: 1040px) {
+    margin-top: 80px;
+  }
+
+  .shops-page__header {
+    margin-top: 50px;
+    max-width: 1175px;
+    text-align: center;
+    margin: auto;
+
+    .shops-page__shop-information {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      margin-top: max(2.58%, 25px);
+
+      @media screen and (max-width: 1040px) {
+        grid-template-columns: 1fr;
+      }
+
+      &>div {
+        $border: 1px solid #D9D9D9;
+
+        padding: 8.5%;
+        flex: 1 0 auto;
+
+        @media screen and (max-width: 1040px) {
+          padding: 3%;
         }
+
+        &:nth-child(1) {
+          border-top: $border;
+          position: relative;
+
+          @media screen and (min-width: 1041px) {
+            border-bottom: $border;
+            border-left: $border;
+
+            &::after {
+              content: "";
+              width: 1px;
+              height: calc(100% - 52px);
+              transform: translateY(-50%);
+              display: block;
+              position: absolute;
+              inset: 50% 0 auto auto;
+              background-color: #D9D9D9;
+            }
+          }
+        }
+
+        &:nth-child(2) {
+          border-top: $border;
+          border-bottom: $border;
+          @media screen and (min-width: 1041px) {
+            border-right: $border;
+          }
+        }
+
+        p {
+          font-size: 40px;
+          margin-top: 4.1%;
+          @media screen and (max-width: 1040px) {
+            font-size: 30px; 
+            margin-top: 1.8%;
+          }
+          @media screen and (max-width: 576px) {
+            font-size: 25px;
+          }
+        }
+      }
     }
+  }
 }

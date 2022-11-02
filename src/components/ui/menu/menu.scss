@@ -1,7 +1,6 @@
 @use './../../../v';
 
 .menu {
-    margin-top: 60px;
     position: relative;
     .menu__heading-container {
         @include v.fullBleed('./../../../assets/img/menu.webp');
