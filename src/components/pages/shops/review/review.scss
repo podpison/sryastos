@@ -1,19 +1,27 @@
 .review {
-    display: flex;
-    justify-content: center;
-    margin-top: 120px;
-    align-items: center;
-    .review__heading {
-        font-weight: 700;
-        font-size: 100px;
+  display: flex;
+  justify-content: center;
+  margin-top: max(7.5%, 50px);
+  align-items: center;
+
+  @media screen and (max-width: 1040px) {
+    flex-direction: column;
+  }
+
+  .review__heading {}
+
+  .review__yandex-img {
+    width: 190px;
+    height: 70px;
+    margin-left: 140px;
+    cursor: pointer;
+
+    @media screen and (max-width: 1040px) {
+      margin: max(2.9%, 15px) 0 0;
     }
-    .review__yandex-img {
-        width: 190px;
-        height: 70px;
-        margin-left: 140px;
-        cursor: pointer;
-        & > img {
-            width: 100%;
-        }
+
+    &>img {
+      width: 100%;
     }
+  }
 }

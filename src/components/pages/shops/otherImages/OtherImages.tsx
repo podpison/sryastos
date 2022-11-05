@@ -11,6 +11,6 @@ export const OtherImages: React.FC = () => {
     <div className='other-images__inner1'>
       {Items?.slice(0, 2)}
     </div>
-    {Items?.slice(3)}
+    {Items?.slice(2)}
   </section>
 };

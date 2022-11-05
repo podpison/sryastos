@@ -1,38 +1,56 @@
 @use './../../../../../v';
 
 .other-coffe-shops .other-coffe-shops__item {
-    &:hover {
-        .other-coffe-shops__item-heading {
-            .other-coffe-shops__item-name, .other-coffe-shops__item-address {
-                color: v.$greenHover;
-            }
-        }
-    }
-    .other-coffe-shops__item-heading {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
-        .other-coffe-shops__item-name {
-            font-size: 35px;
-            transition: color .25s;
-            @media screen and (max-width: 1040px) {
-                font-size: 30px;
-            }
-        }
-        .other-coffe-shops__item-address {
-            transition: color .25s;
-        }
-    }
-    .other-coffe-shops__item-img-container {
-        margin-top: 10px;
-        height: calc(100% - 47px);
-        .image-shadow {
-            @media screen and (max-width: 1040px) {
-                height: calc(100% + 4px);
-            }
-        }
-        .other-coffe-shops__item-img {
-            width: 100%;
-        }
-    }
+	&:hover {
+		.other-coffe-shops__item-heading {
+
+			.other-coffe-shops__item-name,
+			.other-coffe-shops__item-address {
+				color: v.$greenHover;
+			}
+		}
+	}
+
+	.other-coffe-shops__item-heading {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+
+		@media screen and (max-width: 576px) {
+			align-items: flex-start;
+			row-gap: 10px;
+			flex-direction: column;
+		}
+
+		.other-coffe-shops__item-name {
+			font-size: 35px;
+			transition: color .25s;
+
+			@media screen and (max-width: 1040px) {
+				font-size: 30px;
+			}
+		}
+
+		.other-coffe-shops__item-address {
+			transition: color .25s;
+		}
+	}
+
+	.other-coffe-shops__item-img-container {
+		margin-top: 10px;
+		height: calc(100% - 47px);
+
+		.image-shadow {
+			@media screen and (max-width: 1040px) {
+				height: calc(100% + 4px);
+			}
+			@media screen and (max-width: 1040px) {
+				height: calc(100% - 33px);	
+			}
+		}
+
+		.other-coffe-shops__item-img {
+			width: 100%;
+		}
+	}
 }

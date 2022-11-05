@@ -1,5 +1,6 @@
 import './item.scss';
 import { shops } from './../../../main/otherCoffeShops/OtherCoffeShops';
+import cn from 'classnames';
 
 type Props = {
   index: number
@@ -7,9 +8,10 @@ type Props = {
 
 export const Item: React.FC<Props> = ({ src, sign, index }) => {
   const id = index + 1;
+  const componentClassName = `other-images__img${id}-container`;
 
-  return <div className={`otherImages__img${id}-container`}>
-    <img className={`otherImages__img${id}`} src={src} alt={`image${id}`} />
-    {sign && <p className='otherImage__sign'>{sign}</p>}
+  return <div className={cn(componentClassName, sign && `other-images__img-container_signed`)}>
+    <img className={`other-images__img${id}`} src={src} alt={`image${id}`} />
+    {sign && <p className='other-images__sign'>{sign}</p>}
   </div>
 };

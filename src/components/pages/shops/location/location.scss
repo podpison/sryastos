@@ -2,7 +2,7 @@
 
 .location {
   background-color: v.$green;
-  margin-top: 100px;
+  margin-top: max(6.25%, 50px);
 
   .location__inner {
     display: grid;
@@ -39,19 +39,8 @@
     }
 
     .location__heading {
-      font-weight: 700;
-      font-size: 100px;
       grid-area: h;
       color: white;
-
-      @media screen and (max-width: 1040px) {
-        text-align: center;
-        font-size: 80px;
-      }
-      @media screen and (max-width: 576px) {
-        text-align: center;
-        font-size: 60px;
-      }
     }
   }
 }

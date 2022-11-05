@@ -172,6 +172,23 @@ h1 {
 	}
 }
 
+h2 {
+	font-size: 100px;
+	font-weight: 700;
+
+	@media screen and (max-width: 1040px) {
+		font-size: 80px;
+	}
+
+	@media screen and (max-width: 768px) {
+		font-size: 60px;
+	}
+
+	@media screen and (max-width: 576px) {
+		font-size: 40px;
+	}
+}
+
 h5 {
 	font-size: 40px;
 	font-weight: bold;
@@ -183,4 +200,20 @@ h5 {
 	@media screen and (max-width: 576px) {
 		font-size: 30px;
 	}
+}
+
+h4 {
+	font-size: 40px;
+	font-weight: 700;
+	@media screen and (max-width: 1040px) {
+		font-size: 35px;	
+	}
+	@media screen and (max-width: 768px) {
+		font-size: 30px;	
+	}
+}
+
+h6 {
+	font-weight: 700;
+	font-size: 26px;
 }

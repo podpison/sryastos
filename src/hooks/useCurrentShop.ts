@@ -1,10 +1,16 @@
 import { useParams } from "react-router-dom";
-import { shops } from "../components/pages/main/otherCoffeShops/OtherCoffeShops";
+import { shops, ShopType } from "../components/pages/main/otherCoffeShops/OtherCoffeShops";
+import { useState } from 'react';
+import { useEffect } from 'react';
 
 export const useCurrentShop = () => {
-	const { shopName } = useParams();
+	const params = useParams();
+  const [currentShop, setCurrentShop] = useState<undefined | ShopType>(undefined);
 
-  const currentShop = shops.find(s => s.to === shopName);
+  useEffect(() => {
+    let newShop = shops.find(s => s.to === params.shopName);
+    setCurrentShop(newShop);
+  }, [params.shopName]);
 
   return currentShop;
 };

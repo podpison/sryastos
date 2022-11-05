@@ -1,4 +1,3 @@
-import { NavHashLink } from 'react-router-hash-link';
 import { HashLinks } from '../../../ui/hashLinks/HashLinks';
 import { shops } from '../../main/otherCoffeShops/OtherCoffeShops';
 import './header.scss';
@@ -19,10 +18,6 @@ const hashLinks = [
   {
     name: 'Карта',
     hash: 'map'
-  },
-  {
-    name: 'Event',
-    hash: 'event'
   },
 ];
 
