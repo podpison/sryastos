@@ -1,0 +1,46 @@
+@use './../../../../../../v';
+
+@mixin inner($gap, $mt) {
+  display: flex;
+  justify-content: center;
+  gap: $gap;
+  margin-top: $mt;
+
+  @media screen and (max-width: 1040px) {
+    flex-direction: column;
+  }
+}
+
+.balashikha-interier {
+  .interier__inner1 {
+    @include inner((30px 9.4%), (max(9.4%, 30px)));
+    align-items: center;
+
+    .interier__img2 {
+      @include v.maxSize(682, 628);
+    }
+
+    .interier__img3 {
+      @include v.maxSize(579, 842);
+    }
+  }
+
+  .interier__inner2 {
+    @include inner((30px 6.9%), 13px);
+
+    @media screen and (max-width: 1040px) {
+      margin-top: 30px;
+    }
+
+    .interier__img4 {
+      @include v.maxSize(577, 800);
+    }
+
+    .interier__img5 {
+      @include v.maxSize(559, 766);
+      @media screen and (min-width: 1041px) {
+        margin-top: 35px;
+      }
+    }
+  }
+}

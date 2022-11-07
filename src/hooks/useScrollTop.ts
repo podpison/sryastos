@@ -2,11 +2,11 @@ import { useEffect } from 'react';
 
 export const useScrollTop = (disable: boolean = false) => {
   useEffect(() => {
-		if (disable) return;
+    if (disable) return;
 
-		window.scrollTo({
-			top: 0,
-			behavior: 'smooth'
-		})
-	}, []);
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    })
+  }, []);
 };

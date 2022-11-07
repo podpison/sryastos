@@ -1,5 +1,5 @@
 import './review.scss';
-import yandexImg from './../../../../assets/img/shops/balashikha/yandex.webp';
+import yandexImg from './../../../../assets/img/shops/yandex.webp';
 
 export const Review: React.FC = () => {
   return <div className='review' id='review'>

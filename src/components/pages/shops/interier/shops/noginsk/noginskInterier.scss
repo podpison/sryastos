@@ -1,0 +1,41 @@
+.noginsk-interier {
+  .interier__img1 {
+    max-height: 856px;
+    min-height: 507px;
+
+    @media screen and (max-width: 768px) {
+      width: 170%;
+      margin-left: -53%;
+      object-fit: cover;
+    }
+  }
+
+  .interier__img2 {
+    margin: auto;
+    display: block;
+    max-height: 734px;
+    max-width: 984px;
+    margin-top: max(5%, 30px);
+  }
+
+  .interier__inner1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: flex-end;
+    margin: max(2.5%, 30px) auto 0;
+    gap: max(3.2%, 30px);
+    max-width: 1420px;
+
+    @media screen and (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+
+    .interier__img3 {
+      max-height: 766px;
+    }
+
+    .interier__img4 {
+      max-height: 857px;
+    }
+  }
+}

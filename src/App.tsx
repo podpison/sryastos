@@ -16,7 +16,7 @@ function App() {
       <Header />
       <Routes>
         <Route path='/' element={<Main />} />
-        <Route path='/shops/:shopName' element={<Shops />} />
+        <Route path='/shops/:shopName/*' element={<Shops />} />
         <Route path='/menu' element={<Menu />} />
         <Route path='*' element={<NotFound />} />
       </Routes>

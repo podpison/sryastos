@@ -37,3 +37,10 @@ $smallContainer: 1235px;
     color: $greenHover;
   }
 }
+
+@mixin maxSize($maxWidth, $maxHeight) {
+  @media screen and (min-width: 1041px) {
+    max-width: $maxWidth + px;
+    max-height: $maxHeight + px;
+  }
+}

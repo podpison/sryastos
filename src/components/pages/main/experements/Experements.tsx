@@ -6,9 +6,9 @@ import item4Img from './../../../../assets/img/main_page/experement/4.webp';
 import item5Img from './../../../../assets/img/main_page/experement/5.webp';
 import item6Img from './../../../../assets/img/main_page/experement/6.webp';
 import { Item } from './item/Item';
-import leaf3 from './../../../../assets/img/main_page/leaf/3.webp';
-import leaf4 from './../../../../assets/img/main_page/leaf/4.webp';
-import leaf5 from './../../../../assets/img/main_page/leaf/5.webp';
+import leaf3 from './../../../../assets/img/leaf/3.webp';
+import leaf4 from './../../../../assets/img/leaf/4.webp';
+import leaf5 from './../../../../assets/img/leaf/5.webp';
 import { Leaf } from '../../../ui/laef/Leaf';
 
 const items = [

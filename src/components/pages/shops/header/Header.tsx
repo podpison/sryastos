@@ -4,12 +4,12 @@ import './header.scss';
 
 const hashLinks = [
   {
-    name: 'Локация',
-    hash: 'location'
-  },
-  {
     name: 'Интерьер',
     hash: 'interier'
+  },
+  {
+    name: 'Локация',
+    hash: 'location'
   },
   {
     name: 'Оставить отзыв',

@@ -3,11 +3,11 @@ import shop1Img from './../../../../assets/img/main_page/otherCoffeShops/1.webp'
 import shop2Img from './../../../../assets/img/main_page/otherCoffeShops/2.webp';
 import shop3Img from './../../../../assets/img/main_page/otherCoffeShops/3.webp';
 import shop4Img from './../../../../assets/img/main_page/otherCoffeShops/4.webp';
-import noginsk1 from '../../../../assets/img/shops/noginsk/2.webp';
-import noginsk2 from '../../../../assets/img/shops/noginsk/3.webp';
-import noginsk3 from '../../../../assets/img/shops/noginsk/4.webp';
-import noginsk4 from '../../../../assets/img/shops/noginsk/5.webp';
-import noginsk5 from '../../../../assets/img/shops/noginsk/6.webp';
+import noginsk1 from '../../../../assets/img/shops/noginsk/5.webp';
+import noginsk2 from '../../../../assets/img/shops/noginsk/6.webp';
+import noginsk3 from '../../../../assets/img/shops/noginsk/7.webp';
+import noginsk4 from '../../../../assets/img/shops/noginsk/8.webp';
+import noginsk5 from '../../../../assets/img/shops/noginsk/9.webp';
 import balashikha1 from '../../../../assets/img/shops/balashikha/2.webp';
 import balashikha2 from '../../../../assets/img/shops/balashikha/3.webp';
 import balashikha3 from '../../../../assets/img/shops/balashikha/4.webp';
