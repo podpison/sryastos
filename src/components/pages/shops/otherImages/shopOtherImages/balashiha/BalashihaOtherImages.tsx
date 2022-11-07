@@ -4,12 +4,18 @@ import { Item } from '../../item/Item';
 
 export const BalashihaOtherImages: React.FC = () => {
   const currentShop = useCurrentShop();
-  const Items = currentShop?.otherImgs.map((i, index) => <Item {...i} index={index} key={index} />)
 
-  return <section className='other-images'>
+  if (!currentShop) return <></>;
+
+  const Items = currentShop.otherImgs.slice(4).map((i, index) => <Item {...i} index={index} key={index} />)
+
+  return <section className='other-images balashiha-other-images'>
+    {Items[0]}
     <div className='other-images__inner1'>
-      {Items?.slice(0, 4)}
+      {Items.slice(1, 3)}
     </div>
-    {Items?.slice(4)}
+    <div className='other-images__inner2'>
+      {Items.slice(3)}
+    </div>
   </section>
 };

@@ -3,23 +3,40 @@
 		&.other-images__img-container:not(:first-child) {
 			margin-top: 30px;
 		}
-		.other-images__sign {
-			margin: 8px 0 0;
-			writing-mode: initial;
-		}
 	}
 }
 
 @mixin sign {
+  margin-top: 8px;
 	@media screen and (max-width: 1040px) {
-		margin: 8px 0 0;
+		margin: 8px 0 0 0;
 		writing-mode: initial;
 		text-align: left;
+    justify-content: initial;
 	}
 }
 
+@mixin inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px 55px;
+  @media screen and (max-width: 1040px) {
+    flex-direction: column;
+    align-items: initial;
+    margin-top: 30px;
+  }
+}
+
 .other-images {
-	margin-top: 100px;
 	max-width: 1215px;
 	margin: max(6.25%, 50px) auto 0;
+  img {
+    width: 100%;
+
+    @media screen and (max-width: 1040px) {
+      max-height: 800px;
+      object-fit: cover;
+    }
+  }
 }

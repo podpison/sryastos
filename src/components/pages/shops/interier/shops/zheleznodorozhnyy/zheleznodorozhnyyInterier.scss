@@ -1,0 +1,28 @@
+@use './../../interier.scss';
+@use './../../../../../../v';
+
+.zheleznodorozhnyy-interier {
+  .interier__img2 {
+    @include v.maxSize(855, 551);
+    display: flex;
+    margin: max(5%, 30px) auto 0;
+    @media screen and (min-width: 1041px) {
+      transform: translateX(20%);
+    }
+  }
+
+  .interier__inner1 {
+    @include interier.inner;
+    @media screen and (min-width: 1041px) {
+      margin-top: -60px; 
+    }
+    .interier__img3 {
+      @include v.maxSize(689, 1014);
+      z-index: 1;
+    }
+
+    .interier__img4 {
+      @include v.maxSize(607, 809);
+    }
+  }
+}

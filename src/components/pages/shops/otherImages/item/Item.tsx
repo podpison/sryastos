@@ -10,7 +10,7 @@ export const Item: React.FC<Props> = ({ src, sign, index }) => {
   const id = index + 1;
   const componentClassName = `other-images__img${id}-container`;
 
-  return <div className={cn(componentClassName, sign && `other-images__img-container_signed`)}>
+  return <div className={cn(componentClassName, 'other-images__img-container', sign && `other-images__img-container_signed`)}>
     <img className={`other-images__img${id}`} src={src} alt={`image${id}`} />
     {sign && <p className='other-images__sign'>{sign}</p>}
   </div>

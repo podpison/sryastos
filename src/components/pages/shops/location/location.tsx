@@ -1,14 +1,14 @@
+import { useCurrentShop } from '../../../../hooks/useCurrentShop';
 import './location.scss';
 
 export const Location: React.FC = () => {
+  const location = useCurrentShop()?.location || ['', ''];
+
   return <section className='location' id='location'>
     <div className='location__inner'>
       <h2 className='location__heading'>Локация</h2>
-      <p className='location__item'>Тропический оазис в сердце  Ногинска. Утопающая в зелени кофейня, стала визитной карточкой нашей сети,а уютная уличная вернада  прекрасно вписалась в историческую часть города.</p>
-      <p className='location__item'>Порой хочется сбежать от городской суеты и очутиться на берегу океана под тенью пальм . Наша кофейня идельно подходит для свиданий или встреч с друзьми, где можно насладиться спокойной атмосферой тропического острова.
-        Кофейня, с небольшими и уютными местами для отдыха, элементами декора и интерьера, которые мы привезли с самого острова Бали!
-        На улице расположена, барная стойка обвитая тропическими растениями. За ней можно почилить, попивая свой любимый смузи.
-      </p>
+      <p className='location__item'>{location[0]}</p>
+      <p className='location__item'>{location[1]}</p>
     </div>
   </section>
 };

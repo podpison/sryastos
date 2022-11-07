@@ -1,0 +1,64 @@
+@use './../../otherImages.scss';
+@use './../../../../../../v';
+
+.balashiha-other-images {
+  @include otherImages.hideUnsignedPhotos;
+  .other-images__img1-container {
+    display: flex;
+    justify-content: center;
+
+    .other-images__img1 {
+      @include v.maxSize(797, 597);
+      z-index: 1;
+    }
+  }
+
+  .other-images__inner1 {
+    @include otherImages.inner;
+
+    @media screen and (min-width: 1041px) {
+      margin-top: -90px;
+    }
+
+    .other-images__img2-container {
+
+      .other-images__img2 {
+        @include v.maxSize(499, 665);
+      }
+
+      .other-images__sign {
+        @include otherImages.sign;
+        margin-left: 30px;
+      }
+    }
+
+    .other-images__img3-container {
+
+      .other-images__img3 {
+        @include v.maxSize(670, 416);
+      }
+    }
+  }
+
+  .other-images__inner2 {
+    @include otherImages.inner;
+
+    @media screen and (min-width: 1041px) {
+      margin-top: -55px;
+    }
+
+    .other-images__img4-container {
+
+      .other-images__img4 {
+        @include v.maxSize(637, 477);
+      }
+    }
+
+    .other-images__img5-container {
+
+      .other-images__img5 {
+        @include v.maxSize(492, 656);
+      }
+    }
+  }
+}
