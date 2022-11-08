@@ -3,6 +3,27 @@
 .location {
   background-color: v.$green;
   margin-top: max(6.25%, 50px);
+  position: relative;
+
+  .location__leaf1 {
+    z-index: 1;
+    inset: -80% 0 0 -10px;
+  }
+
+  .location__leaf2 {
+    z-index: 1;
+    inset: 70% 0 0 -22px;
+    transform: scale(.8);
+  }
+  
+  .location__leaf3 {
+    inset: 170% 0 auto auto;
+  }
+
+  .location__leaf4 {
+    inset: 450% -70px auto auto;
+    transform: scale(.8) rotateY(180deg);
+  }
 
   .location__inner {
     display: grid;
@@ -11,15 +32,18 @@
     padding: max(3.75%, 30px) 10px;
     max-width: 1250px;
     margin: 0 auto;
-    column-gap: 10.4%;
+    column-gap: 7vw;
+    z-index: 2;
+    position: relative;
 
     @media screen and (max-width: 1040px) {
       grid-template-columns: 1fr;
       grid-template-areas: "h" "t1" "t2";
       row-gap: 20px;
     }
+
     @media screen and (max-width: 576px) {
-      row-gap: 15px; 
+      row-gap: 15px;
     }
 
     .location__item {
@@ -33,8 +57,9 @@
           grid-area: t#{$i - 1};
         }
       }
+
       @media screen and (max-width: 576px) {
-        font-size: 20px; 
+        font-size: 20px;
       }
     }
 

@@ -31,6 +31,7 @@ import electrostal3 from '../../../../assets/img/shops/electrostal/4.webp';
 import electrostal4 from '../../../../assets/img/shops/electrostal/5.webp';
 import electrostal5 from '../../../../assets/img/shops/electrostal/6.webp';
 import electrostal6 from '../../../../assets/img/shops/electrostal/7.webp';
+import electrostal7 from '../../../../assets/img/shops/electrostal/8.webp';
 import { Item } from './item/Item';
 import leaf2 from './../../../../assets/img/main_page/leaf/2.webp';
 import { Leaf } from '../../../ui/laef/Leaf';
@@ -200,7 +201,11 @@ export const shops = [
       },
       {
         src: electrostal6,
-        sign: null
+        sign: 'Внутри много дерева и бетона'
+      },
+      {
+        src: electrostal7,
+        sign: 'Светильники из экологичного материала ручной работы'
       },
     ]
   },

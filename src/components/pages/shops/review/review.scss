@@ -1,11 +1,16 @@
 .review {
   display: flex;
   justify-content: center;
-  margin-top: max(7.5%, 50px);
   align-items: center;
+  position: relative;
+  margin-top: max(7.5%, 50px);
 
   @media screen and (max-width: 1040px) {
     flex-direction: column;
+  }
+
+  .review__leaf1 {
+    inset: auto auto -80% 0;
   }
 
   .review__heading {}

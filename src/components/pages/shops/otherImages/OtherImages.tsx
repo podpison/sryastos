@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import { NoginskOtherImages } from './shopOtherImages/noginsk/NoginskOtherImages';
 import { BalashihaOtherImages } from './shopOtherImages/balashiha/BalashihaOtherImages';
 import { ZheleznodorozhnyyOtherImages } from './shopOtherImages/zheleznodorozhnyy/ZheleznodorozhnyyOtherImages';
+import { ElectrostalOtherImages } from './shopOtherImages/electrostal/ElectrostalOtherImages';
 
 export const OtherImages: React.FC = () => {
   const { shopName } = useParams();
@@ -19,7 +20,7 @@ export const OtherImages: React.FC = () => {
       return <ZheleznodorozhnyyOtherImages />
     case 'electrostal':
 
-      return <></>
+      return <ElectrostalOtherImages />
     default:
       return <></>;
   };

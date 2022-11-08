@@ -10,6 +10,9 @@ import { Subcategory } from './subcategory/Subcategory';
 import { CoffeeItem } from './coffeeItem/CoffeeItem';
 import { CoffeeItemType, MenuCardType } from '../../../redux/reducers/static';
 import { Card } from './card/Card';
+import { Leaf } from '../../ui/laef/Leaf';
+// import leaf1 from '../../../assets/img/menu/leaf/1.webp';
+// import leaf2 from '../../../assets/img/menu/leaf/2.webp';
 
 const isCoffeeType = (item: CoffeeItemType | MenuCardType): item is CoffeeItemType => {
   return (item as CoffeeItemType).subcategory !== undefined;
@@ -79,6 +82,7 @@ export const Menu: React.FC = () => {
       return <Category {...c} key={index}>
         <Subcategory subcategory={c.subcategory}>
           <div className='menu-page__coffee'>
+            {/* <Leaf className='menu-page__leaf2' src={leaf2} /> */}
             <div className='menu-page__items'>
               {Items}
             </div>
@@ -111,7 +115,10 @@ export const Menu: React.FC = () => {
 
   return <main className='menu-page'>
     <Header className='menu-page__header' />
-    <HashLinks data={hashLinks} />
+    <div className='menu-page__hash-links-container'>
+      <HashLinks className='menu-page__hash-links' data={hashLinks} />
+      {/* <Leaf className='menu-page__leaf1' src={leaf1} /> */}
+    </div>
     <div className='menu-page__categories-container'>
       {Categories}
     </div>

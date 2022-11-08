@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import { NoginskInterier } from './shops/noginsk/NoginskInterier';
 import { BalashikhaInterier } from './shops/balashikha/BalashikhaInterier';
 import { ZheleznodorozhnyyInterier } from './shops/zheleznodorozhnyy/ZheleznodorozhnyyInterier';
+import { ElectrostalInterier } from './shops/electrostal/ElectrostalInterier';
 
 export const Interier: React.FC = () => {
   const { shopName } = useParams();
@@ -19,7 +20,7 @@ export const Interier: React.FC = () => {
     return <ZheleznodorozhnyyInterier />
     case 'electrostal':
       
-    return <></>
+    return <ElectrostalInterier />
     default:
       return <></>;
   };

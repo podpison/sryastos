@@ -6,16 +6,18 @@ import closeMenuIcon from './../../../../assets/img/close.svg'; //Close icon by 
 import logo from './../../../../assets/img/logo.svg';
 import cn from 'classnames';
 import { Link } from 'react-router-dom';
+import { Vk } from '../../vk/Vk';
 
 export const MobileMenu: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const shadowRef = useRef<HTMLDivElement>(null);
 
   const handleOpenStatus = () => setIsOpen(prev => !prev);
+  const closeBurger = () => setIsOpen(false);
 
   useEffect(() => {
     const callback = (e: MouseEvent) => {
-      (isOpen && e.target === shadowRef.current) && setIsOpen(false);
+      (isOpen && e.target === shadowRef.current) && closeBurger();
     };
 
     document.addEventListener('click', callback);
@@ -26,11 +28,12 @@ export const MobileMenu: React.FC = () => {
     <div ref={shadowRef} className='mobile-menu__shadow' />
     <img src={burger} className='mobile-menu__burger' onClick={handleOpenStatus} alt='burger' />
     <div className='mobile-menu__inner'>
-      <Link to='/'>
-        <img className='mobile-menu__logo' src={logo} alt='logo' />
-      </Link>
-      <Nav className='mobile-menu__nav' />
       <img src={closeMenuIcon} onClick={handleOpenStatus} className='mobile-menu__nav-closer' alt='close' />
+      <Link className='mobile-menu__logo' to='/'>
+        <img src={logo} alt='logo' />
+      </Link>
+      <Nav closeBurger={closeBurger} className='mobile-menu__nav' />
+      <Vk className='mobile-menu__vk' />
     </div>
   </div>
 };

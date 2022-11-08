@@ -1,12 +1,23 @@
 @use './../../../v';
 
 .menu-page {
+  position: relative;
   .menu-page__header {
     .menu__heading-container {
       max-height: 550px;
     }
   }
-
+  .menu-page__hash-links-container {
+    position: relative;
+    .menu-page__hash-links {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 1120px;
+    }
+    // .menu-page__leaf1 {
+    //   bottom: 30px;
+    // }
+  }
   .menu-page__categories-container {
     display: flex;
     flex-direction: column;
@@ -27,6 +38,9 @@
       gap: 5.7%;
     }
 
+    // .menu-page__leaf2 {
+
+    // }
     .menu-page__items {
       display: flex;
       flex-direction: column;

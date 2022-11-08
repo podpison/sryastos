@@ -12,7 +12,8 @@
 
 .interier {
   margin-top: max(3.14%, 30px);
-
+  position: relative;
+  z-index: 2;
   img {
     width: 100%;
 
