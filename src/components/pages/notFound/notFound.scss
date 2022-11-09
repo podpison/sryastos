@@ -1,0 +1,27 @@
+@use './../../../v';
+
+.not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  row-gap: 30px;
+  .not-found__heading {
+    @media screen and (max-width: 576px) {
+      font-size: 50px;
+    }
+  }
+  .not-found__to-main-page {
+    font-size: 24px;
+    background-color: v.$green;
+    color: white;
+    padding: 12px 20px;
+    transition: background-color .25s;
+    &:hover {
+      background-color: v.$greenHover;
+    }
+    @media screen and (max-width: 576px) {
+      font-size: 20px;
+    }
+  }
+}

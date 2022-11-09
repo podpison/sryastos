@@ -1,0 +1,5 @@
+@use './../../../../../v';
+
+.header__nav-item.header__nav-item_active {
+  color: v.$greenHover;
+}

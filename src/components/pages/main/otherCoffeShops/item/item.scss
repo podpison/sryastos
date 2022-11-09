@@ -40,12 +40,13 @@
 		margin-top: 10px;
 		height: calc(100% - 47px);
 
+		@media screen and (max-width: 576px) {
+			height: calc(100% - 83px);
+		}
+
 		.image-shadow {
 			@media screen and (max-width: 1040px) {
 				height: calc(100% + 4px);
-			}
-			@media screen and (max-width: 1040px) {
-				height: calc(100% - 33px);	
 			}
 		}
 

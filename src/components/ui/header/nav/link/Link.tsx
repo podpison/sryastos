@@ -1,6 +1,8 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import './link.scss';
-import { NavHashLink } from 'react-router-hash-link'
+import './link_active.scss';
+import { HashLink } from 'react-router-hash-link'
+import cn from 'classnames';
 
 type Props = {
   to: string
@@ -10,10 +12,11 @@ type Props = {
 }
 
 export const Link: React.FC<Props> = ({ to, name, hashLink, closeBurger }) => {
+  const { pathname, hash } = useLocation();
+  const url = pathname + hash;
+  const Link = hashLink ? HashLink : NavLink;
 
-  const Link = hashLink ? NavHashLink : NavLink;
-
-  return <Link className={({ isActive }) => 'header__nav-item'} to={to} onClick={closeBurger}>
+  return <Link className={cn('header__nav-item', url.includes(to) && 'header__nav-item_active')} to={to} onClick={closeBurger}>
     {name}
   </Link>
 };
