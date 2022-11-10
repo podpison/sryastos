@@ -144,13 +144,8 @@ a {
 	color: v.$green;
 }
 
-@font-face {
-	font-family: bebasNeue;
-	src: url(./assets/fonts/BebasNeue.ttf);
-}
-
 body {
-	font-family: v.$mainFont;
+	@include v.mainFort;
 	letter-spacing: 1px;
 	margin: 0 auto;
 	background-color: v.$background;
@@ -161,7 +156,7 @@ body {
 
 h1 {
 	font-size: 70px;
-	font-weight: bold;
+	font-weight: 700;
 
 	@media screen and (max-width: 1040px) {
 		font-size: 50px;
@@ -191,7 +186,7 @@ h2 {
 
 h5 {
 	font-size: 40px;
-	font-weight: bold;
+	font-weight: 700;
 
 	@media screen and (max-width: 1040px) {
 		font-size: 35px;
@@ -205,6 +200,8 @@ h5 {
 h4 {
 	font-size: 40px;
 	font-weight: 700;
+	font-weight: 700;
+
 	@media screen and (max-width: 1040px) {
 		font-size: 35px;	
 	}
@@ -216,4 +213,5 @@ h4 {
 h6 {
 	font-weight: 700;
 	font-size: 26px;
+	font-weight: 700;
 }

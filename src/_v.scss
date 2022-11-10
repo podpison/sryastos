@@ -2,8 +2,6 @@ $green: #008E8B;
 $greenHover: #16afad;
 $background: #FFFAEF;
 
-$mainFont: bebasNeue;
-
 $maxWidth: 1600px;
 $container: 1500px;
 $smallContainer: 1235px;
@@ -43,4 +41,8 @@ $smallContainer: 1235px;
     max-width: $maxWidth + px;
     max-height: $maxHeight + px;
   }
+}
+
+@mixin mainFort {
+  font-family: 'Montserrat', sans-serif;
 }

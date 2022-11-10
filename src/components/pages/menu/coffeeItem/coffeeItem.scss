@@ -2,7 +2,7 @@
   $columnGap: 4.2%;
 
   display: grid;
-  grid-template-columns: calc(81% - $columnGap / 2) calc(19% - $columnGap / 2);
+  grid-template-columns: calc(78% - $columnGap / 2) calc(22% - $columnGap / 2);
   gap: 3px $columnGap;
   align-items: center;
 
@@ -20,6 +20,7 @@
 
     @media screen and (max-width: 768px) {
       grid-column: 1 / 3; 
+      overflow: auto hidden;
     }
     .menu-page__name {
       font-weight: 700;
@@ -32,6 +33,7 @@
       overflow: hidden;
       margin: auto 0 4px;
       font-weight: 300;
+      min-width: 20px;
     }
 
     .menu-page__capacities {
