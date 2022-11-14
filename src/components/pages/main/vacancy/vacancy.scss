@@ -92,7 +92,10 @@
       width: fit-content;
       cursor: pointer;
       font-size: 20px;
-
+      transition: background-color .25s;
+      &:hover {
+        background-color: #079f9b;
+      }
       @media screen and (max-width: 768px) {
         padding: 1em 2em;
         margin-top: 5%;
